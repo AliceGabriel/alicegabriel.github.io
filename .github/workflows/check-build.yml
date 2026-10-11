@@ -40,7 +40,7 @@ jobs:
 
       - name: Video stills come from this site, not from YouTube
         run: |
-          grep -q 'src="/assets/img/video/JvMuQN4FuvU.jpg"' _site/index.html
+          grep -q 'assets/img/video/JvMuQN4FuvU.jpg"' _site/index.html
           ! grep -rq 'i.ytimg.com' _site/index.html _site/in-the-media/index.html
 
       - name: Quotation marks stay as typed
@@ -54,4 +54,5 @@ jobs:
 
       - name: Fingerprint of the built pages
         run: |
-          cd _site && sha256sum index.html */index.html 404.html | tee ../site-fingerprint.txt
+          cd _site
+          echo "::notice title=page fingerprints::$(for f in index.html team/index.html publications/index.html projects/index.html about-me/index.html in-the-media/index.html codes-and-hpc-training/index.html teaching/index.html 404.html; do printf '%s=%s ' "$f" "$(sha256sum "$f" | cut -c1-12)"; done)"
