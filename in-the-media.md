@@ -15,13 +15,13 @@ grid_class: media
 
 ***
 
-{% include video.html id="IMPORT:in-the-media-video-2" %}
+{% include video.html id="PBczPAzr2Rk" title="How to prepare for the next earthquake in San Diego - KPBS radio interview" %}
 
 **How to prepare for the next earthquake in San Diego - KBPS radio interview**, April 15, 2025: <https://www.kpbs.org/podcasts/kpbs-midday-edition/how-to-prepare-for-the-next-earthquake-in-san-diego>
 
 ***
 
-{% include video.html id="IMPORT:in-the-media-video-3" %}
+{% include video.html id="nFdRdbmLHHM" title="On the M5.2 Julian earthquake - Fox 5 TV interview" %}
 
 **On the M5.2 Julian earthquake - Fox 5 TV interview,** April 15, 2025: <https://fox5sandiego.com/news/earthquakes/preliminary-data-mondays-earthquake-stronger-than-anticipated/>
 

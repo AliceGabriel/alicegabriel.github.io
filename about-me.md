@@ -9,7 +9,8 @@ body_class: page-about
 
 ## Curriculum Vitae
 
-Download my short [**2-page CV and publication list**](https://storage.e.jimdo.com/file/deddef62-387f-4716-b801-52bb6a6900b9/AGabriel_CV_Short_July_2026.pdf)
+Download my short **2-page CV** and publication list **here**.<br>
+A longer, more **detailed CV** and publication list are [**here**.](https://storage.e.jimdo.com/file/e377d013-7ff2-4f37-a839-0a7c2dbce317/AGabriel_CV_Long_October_2026.pdf)
 
 ![](IMPORT:about-me-02)
 

@@ -32,6 +32,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -592,7 +593,7 @@ class VisibleText(HTMLParser):
 
 def words(text):
     """Lower-case words only: punctuation, quote style and spacing are ignored."""
-    text = text.replace("­", "").lower()
+    text = unicodedata.normalize("NFC", text).replace("­", "").lower()
     return re.findall(r"[^\W_]+", text, re.UNICODE)
 
 
