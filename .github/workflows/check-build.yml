@@ -1,0 +1,49 @@
+name: Check that the site builds on GitHub
+
+# Run by hand from the "Actions" tab. It builds the site with the same software
+# GitHub Pages uses and checks a few things in the result. It publishes nothing.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build with the GitHub Pages software
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: All eight pages are there
+        run: |
+          for page in index.html team/index.html publications/index.html projects/index.html about-me/index.html in-the-media/index.html codes-and-hpc-training/index.html teaching/index.html 404.html sitemap.xml; do
+            test -s "_site/$page" || { echo "missing: $page"; exit 1; }
+          done
+
+      - name: The migration tools are not published
+        run: test ! -e _site/tools && test ! -e _site/README.md
+
+      - name: Video stills come from this site, not from YouTube
+        run: |
+          grep -q 'src="/assets/img/video/JvMuQN4FuvU.jpg"' _site/index.html
+          ! grep -rq 'i.ytimg.com' _site/index.html _site/in-the-media/index.html
+
+      - name: Quotation marks stay as typed
+        run: grep -q 'the "Nobel Prize" of Supercomputing\|the &quot;Nobel Prize&quot; of Supercomputing' _site/index.html
+
+      - name: Pictures and papers are in place
+        run: |
+          test "$(ls _site/assets/papers | wc -l)" -ge 35
+          test "$(ls _site/assets/img/home | wc -l)" -ge 18
+          ! grep -rq 'IMPORT:' _site/*.html _site/*/index.html
+
+      - name: Fingerprint of the built pages
+        run: |
+          cd _site && sha256sum index.html */index.html 404.html | tee ../site-fingerprint.txt
