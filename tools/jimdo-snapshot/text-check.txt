@@ -1,0 +1,9 @@
+Text of each Jimdo page that does not appear word for word in the new page.
+Punctuation, quote style, upper and lower case, and link addresses are ignored.
+Menu and cookie-notice text is left out. A high share found usually means a repaired
+line break or hyphen. A low share means text is missing from the new page.
+Lines marked [link] are link addresses on the Jimdo page that the new page does not have.
+
+== /  (59 text blocks on the Jimdo page, 0 not found word for word)
+   link targets missing from the new page: 0
+

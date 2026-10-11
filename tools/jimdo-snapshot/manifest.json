@@ -276,7 +276,7 @@
       "linked_in": [
         "about-me.md"
       ],
-      "status": "failed: HTTP 404 (Server: cloudflare; cf-ray: a48b5f23c880dcfa-LAX; page says: Not Found Not Found The requested resource was not found on this server.)"
+      "status": "failed: HTTP 404 (Server: cloudflare; cf-ray: a48b9aec9de8a203-MSP; page says: Not Found Not Found The requested resource was not found on this server.)"
     },
     {
       "from": "https://storage.e.jimdo.com/file/e43d66e8-a856-4578-aef9-6e53e98ae07b/997517_0_merged_1717162199.pdf",
@@ -324,7 +324,295 @@
       "to": "/assets/papers/yen-et-al-2025.pdf"
     }
   ],
-  "pictures": [],
-  "videos": [],
-  "files_total_bytes": 440862348
+  "pictures": [
+    {
+      "page": "home",
+      "slots_in_new_page": 18,
+      "pictures_on_jimdo_page": 18,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "450064724/8fcb0f18-947b-4fe7-9406-382d632d0e8d.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "width": "1920",
+            "height": "1080"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/01-8fcb0f18.jpg",
+          "bytes": 131816,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/450064724/8fcb0f18-947b-4fe7-9406-382d632d0e8d.jpg"
+        },
+        {
+          "order": 2,
+          "id": "552679490/8ee7da44-5cd7-4515-aae4-26f2891e39f1.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;237;0;237",
+            "width": "1440",
+            "height": "1080"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/02-8ee7da44.png",
+          "bytes": 122555,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552679490/8ee7da44-5cd7-4515-aae4-26f2891e39f1.png"
+        },
+        {
+          "order": 3,
+          "id": "552357641/6741e60a-5f4a-4917-b6bf-b7e320ecd4d8.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "523;0;523;0",
+            "width": "1920",
+            "height": "1440"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/03-6741e60a.jpg",
+          "bytes": 288604,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552357641/6741e60a-5f4a-4917-b6bf-b7e320ecd4d8.jpg"
+        },
+        {
+          "order": 4,
+          "id": "552590267/7e6e08b3-e5e5-4705-9746-520fd13de3c7.webp",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;183;0;183",
+            "width": "1024",
+            "height": "768"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/04-7e6e08b3.jpg",
+          "bytes": 124210,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552590267/7e6e08b3-e5e5-4705-9746-520fd13de3c7.webp"
+        },
+        {
+          "order": 5,
+          "id": "552759994/b6077a59-9de6-4428-93e7-f94fb2e863b2.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;263;0;263",
+            "width": "1024",
+            "height": "768"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/05-b6077a59.png",
+          "bytes": 176650,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552759994/b6077a59-9de6-4428-93e7-f94fb2e863b2.png"
+        },
+        {
+          "order": 6,
+          "id": "548725688/6a724790-b4b2-479a-a7d5-055d2b1a17c9.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "1920"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/06-6a724790.jpg",
+          "bytes": 543722,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/548725688/6a724790-b4b2-479a-a7d5-055d2b1a17c9.jpg"
+        },
+        {
+          "order": 7,
+          "id": "542727905/39c20f33-5738-4b69-b486-b1180837c414.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;432;0;432",
+            "width": "1024",
+            "height": "768"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/07-39c20f33.png",
+          "bytes": 125050,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/542727905/39c20f33-5738-4b69-b486-b1180837c414.png"
+        },
+        {
+          "order": 8,
+          "id": "535258312/dc03ff09-773f-4acf-a087-9c7e769a7d3f.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;248;0;248",
+            "width": "1440",
+            "height": "1080"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/08-dc03ff09.jpg",
+          "bytes": 117134,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535258312/dc03ff09-773f-4acf-a087-9c7e769a7d3f.jpg"
+        },
+        {
+          "order": 9,
+          "id": "535169095/3c5cc101-5cc8-4cb4-94dc-060343495b65.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "168;0;168;0",
+            "width": "1024",
+            "height": "1200"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/09-3c5cc101.jpg",
+          "bytes": 252442,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535169095/3c5cc101-5cc8-4cb4-94dc-060343495b65.jpg"
+        },
+        {
+          "order": 10,
+          "id": "535168036/3edd4c1f-2d24-40f1-b138-a4fa36580a43.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "1920",
+            "height": "1440"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/10-3edd4c1f.jpg",
+          "bytes": 390338,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535168036/3edd4c1f-2d24-40f1-b138-a4fa36580a43.jpg"
+        },
+        {
+          "order": 11,
+          "id": "535081156/d858be82-2ce9-43ea-8946-da7f7afb859f.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;35;0;35",
+            "width": "1920",
+            "height": "1440"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/11-d858be82.jpg",
+          "bytes": 374740,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535081156/d858be82-2ce9-43ea-8946-da7f7afb859f.jpg"
+        },
+        {
+          "order": 12,
+          "id": "531692167/2429cc67-54bd-41d9-9032-228e501855ae.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "224;0;224;0",
+            "width": "640",
+            "height": "480"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/12-2429cc67.png",
+          "bytes": 371000,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/531692167/2429cc67-54bd-41d9-9032-228e501855ae.png"
+        },
+        {
+          "order": 13,
+          "id": "531671761/b5040b92-5bc2-4f56-83d6-cbb98eef47b6.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "1920"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/13-b5040b92.jpg",
+          "bytes": 292714,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/531671761/b5040b92-5bc2-4f56-83d6-cbb98eef47b6.png"
+        },
+        {
+          "order": 14,
+          "id": "517985859/384a03d9-a3c1-4a82-ae80-9e19a57802e2.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "350;0;350;0",
+            "width": "1024",
+            "height": "768"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/14-384a03d9.jpg",
+          "bytes": 177048,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/517985859/384a03d9-a3c1-4a82-ae80-9e19a57802e2.jpg"
+        },
+        {
+          "order": 15,
+          "id": "488921397/2f9d4423-fc47-4ae2-be74-8b90794aa725.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;237;0;237",
+            "width": "1280",
+            "height": "960"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/15-2f9d4423.png",
+          "bytes": 406446,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/488921397/2f9d4423-fc47-4ae2-be74-8b90794aa725.png"
+        },
+        {
+          "order": 16,
+          "id": "471711622/9f25aea5-77a1-4184-a79f-f54799b46bb5.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "347;0;347;0",
+            "width": "1024",
+            "height": "768"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/16-9f25aea5.webp",
+          "bytes": 288508,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=88,format=webp,fit=scale-down,width=1600,height=1600/image/471711622/9f25aea5-77a1-4184-a79f-f54799b46bb5.png"
+        },
+        {
+          "order": 17,
+          "id": "453531226/ede5c959-ea0d-4c43-931e-20cc8d59a7a4.webp",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;150;0;150",
+            "width": "800",
+            "height": "600"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/17-ede5c959.jpg",
+          "bytes": 141992,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/453531226/ede5c959-ea0d-4c43-931e-20cc8d59a7a4.webp"
+        },
+        {
+          "order": 18,
+          "id": "457508370/6c5c79e7-0bfe-4f60-b973-d5abc6010ace.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;150;0;150",
+            "width": "800",
+            "height": "600"
+          },
+          "status": "ok",
+          "to": "/assets/img/home/18-6c5c79e7.jpg",
+          "bytes": 207061,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/457508370/6c5c79e7-0bfe-4f60-b973-d5abc6010ace.png"
+        }
+      ],
+      "placed": true
+    }
+  ],
+  "videos": [
+    {
+      "page": "home",
+      "videos": [
+        {
+          "id": "JvMuQN4FuvU",
+          "near": "ledescription=\"slide\" aria-label=\"1 / 3\" style=\"transform: translate3d(100%, 0px, 0px);\"> <div class=\"T6A7Z EpIrH\" style=\"paddin"
+        },
+        {
+          "id": "JpwcWkPuc9A",
+          "near": "edescription=\"slide\" aria-label=\"2 / 3\" style=\"transform: translate3d(-200%, 0px, 0px);\"> <div class=\"T6A7Z EpIrH\" style=\"paddin"
+        },
+        {
+          "id": "HUJCktfPqXk",
+          "near": "edescription=\"slide\" aria-label=\"3 / 3\" style=\"transform: translate3d(-200%, 0px, 0px);\"> <button type=\"button\" class=\"swiper"
+        },
+        {
+          "id": "KMirUfgbEv0",
+          "near": "/div> GRL paper on the 2024 New Year Noto Peninsula, Japan, earthquake and tsunami \"Rapid earthquake-tsunami modeling: The multi-event, m"
+        }
+      ]
+    }
+  ],
+  "files_total_bytes": 440862348,
+  "site_icon": {
+    "status": "ok",
+    "to": "/assets/img/site-icon.png",
+    "from": "https://storage.e.jimdo.com/cdn-cgi/image/quality=90,fit=cover,width=192,height=192/image/433567170/5c7c6a1f-7f20-4309-bf61-df74d1762296.png",
+    "bytes": 16995
+  }
 }

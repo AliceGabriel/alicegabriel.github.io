@@ -37,13 +37,13 @@ I am the recipient of a AGU Macelwane Award and an AGU Fellow, a current Thomas 
 
 [Read More](/about-me/)
 
-![](IMPORT:home-01)
+![](/assets/img/home/01-8fcb0f18.jpg)
 
 <!-- news -->
 
 ## News
 
-![](IMPORT:home-02)
+![](/assets/img/home/02-8ee7da44.png)
 
 ### New *Seismica* Paper:
 
@@ -53,7 +53,7 @@ New software report co-led by PhD student [Fabian Kutschera](https://fabian-kuts
 
 ***
 
-![](IMPORT:home-03)
+![](/assets/img/home/03-6741e60a.jpg)
 
 ### New *JGR* Paper:
 
@@ -63,7 +63,7 @@ New paper led by PostDoc [Mathilde Marchandon](https://mathildemarchandon.wixsit
 
 ***
 
-![](IMPORT:home-04)
+![](/assets/img/home/04-7e6e08b3.jpg)
 
 ### New *RMRE* Paper:
 
@@ -73,7 +73,7 @@ New paper led by KIT PhD student Rahim Habibi and PostDoc [Thomas Ulrich](https:
 
 ***
 
-![](IMPORT:home-05)
+![](/assets/img/home/05-b6077a59.png)
 
 ### New *EPSL* Paper:
 
@@ -83,7 +83,7 @@ New paper led by PhD student [Zihua Niu](https://aangniu.github.io/) with Nico S
 
 ***
 
-![](IMPORT:home-06)
+![](/assets/img/home/06-6a724790.jpg)
 
 ### Congrats, Dr. Rekoske!
 
@@ -91,7 +91,7 @@ Huge congratulations to **John Rekoske** on successfully defending his PhD! This
 
 ***
 
-![](IMPORT:home-07)
+![](/assets/img/home/07-39c20f33.png)
 
 ### SeisSol and ExaHyPE Workshop
 
@@ -99,7 +99,7 @@ I can hardly believe it has been 20 years of **SeisSol** and 10 years of **ExaHy
 
 ***
 
-![](IMPORT:home-08)
+![](/assets/img/home/08-dc03ff09.jpg)
 
 ### Congrats, Dr. Wirp!
 
@@ -107,7 +107,7 @@ Big, big congratulations to Dr. [**Sara Aniko Wirp**](https://www.geophysik.uni-
 
 ***
 
-![](IMPORT:home-09)
+![](/assets/img/home/09-3c5cc101.jpg)
 
 ### ACM Gordon Bell Prize
 
@@ -115,7 +115,7 @@ We were awarded the "Nobel Prize" of Supercomputing, the [**Association for Comp
 
 ***
 
-![](IMPORT:home-10)
+![](/assets/img/home/10-3edd4c1f.jpg)
 
 ### Hyperion Award for "Best Use of HPC in Physical Sciences"
 
@@ -123,7 +123,7 @@ Thank you [**Hyperion Research**](https://hyperionresearch.com/) for awarding us
 
 ***
 
-![](IMPORT:home-11)
+![](/assets/img/home/11-d858be82.jpg)
 
 ### HPCwire Reader's Choice Award for "Best Use of HPC in Physical Sciences"
 
@@ -131,7 +131,7 @@ Thank you to the [**HPCwire**](http://www.hpcwire.com/) readers for the “[**Be
 
 ***
 
-![](IMPORT:home-12)
+![](/assets/img/home/12-2429cc67.png)
 
 ### In the SSA News!
 
@@ -139,7 +139,7 @@ Thank you to the [**HPCwire**](http://www.hpcwire.com/) readers for the “[**Be
 
 ***
 
-![](IMPORT:home-13)
+![](/assets/img/home/13-b5040b92.jpg)
 
 ### CRESCENT Annual Meeting
 
@@ -147,7 +147,7 @@ Inspiring subduction science in Seattle, and great to present new dynamic ruptur
 
 ***
 
-![](IMPORT:home-14)
+![](/assets/img/home/14-384a03d9.jpg)
 
 ### Congrats, Dr. Niu and Dr. Schliwa!
 
@@ -159,7 +159,7 @@ Congrats Dr. Niu and Dr. Schliwa!
 
 ***
 
-![](IMPORT:home-15)
+![](/assets/img/home/15-2f9d4423.png)
 
 ### Tandem Hackathon
 
@@ -167,7 +167,7 @@ Our first Tandem Developer's Hackathon has concluded successfully. Thanks to all
 
 ***
 
-![](IMPORT:home-16)
+![](/assets/img/home/16-9f25aea5.webp)
 
 ### Science paper - Small and Large Earthquakes Don't Play By the Same Rules
 
@@ -187,7 +187,7 @@ Free-to-read link to the paper at: [https://science.org/stoken/author-tokens/ST-
 
 ***
 
-![](IMPORT:home-17)
+![](/assets/img/home/17-ede5c959.jpg)
 
 ### EOS Editor's highlight for Li & Gabriel, AGU Advances, 2024
 
@@ -197,7 +197,7 @@ Forecasting Earthquake Ruptures from Slow Slip Evolution: A new generation of ph
 
 ***
 
-![](IMPORT:home-18)
+![](/assets/img/home/18-6c5c79e7.jpg)
 
 ### EOS Editor's highlight for Palgunadi et al., JGR Solid Earth, 2024
 

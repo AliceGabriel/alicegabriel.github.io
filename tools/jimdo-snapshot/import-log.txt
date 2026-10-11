@@ -1,76 +1,48 @@
-Import from https://www.alicegabriel.com, 2026-10-11 05:12 UTC, Python 3.12.3, on GitHub
+Import from https://www.alicegabriel.com, 2026-10-11 05:53 UTC, Python 3.12.3, on GitHub
 1. Saving a copy of each Jimdo page
     refused [python] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b5e73be3408ac-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae26c63511a-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [python, browser name] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b5e748d2c14a7-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae2ec52a1c9-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [curl] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b5e757de66f97-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae36e554cbd-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
     refused [curl, browser name] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b5e75febcf7d6-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/: HTTP 403 (Server: cloudflare; cf-ray: a48b5e75febcf7d6-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae43db6ad26-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  using the saved copy of / (119 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae43db6ad26-MSP; 
     refused [python] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b5e768fe9a86a-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae48d745114-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [python, browser name] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b5e774e03d9df-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae50962a1fd-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [curl] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b5e782ba3f7bf-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae56dc9ae26-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
     refused [curl, browser name] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b5e78fbafaf4b-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/team/: HTTP 403 (Server: cloudflare; cf-ray: a48b5e78fbafaf4b-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/publications/: HTTP 403 (Server: cloudflare; cf-ray: a48b5e7b4e7dd903-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/projects/: HTTP 403 (Server: cloudflare; cf-ray: a48b5e7daaf04896-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae5fe8ffc89-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/team/: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae5fe8ffc89-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/publications/: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae8dbc6ad1d-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/projects/: HTTP 403 (Server: cloudflare; cf-ray: a48b9aebdb87510d-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
   could not read https://www.alicegabriel.com/about-me/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
   could not read https://www.alicegabriel.com/in-the-media/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
   could not read https://www.alicegabriel.com/codes-and-hpc-training/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
   could not read https://www.alicegabriel.com/teaching/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
 
-No page could be read from here, and no saved copies are in tools/jimdo-snapshot/pages/.
-Continuing with the PDFs only. Pictures, videos and the text check are left out.
-
 2. PDFs and other files
-  ok    0.6 MB  /assets/papers/bauer-et-al-2018-an-introduction.pdf
-  ok    7.9 MB  /assets/papers/srl-2024413.1.pdf
-  ok   20.0 MB  /assets/papers/SchliwaGabriel-SRL-2024.pdf
-  ok   24.3 MB  /assets/papers/bssa-2024064.1.pdf
-  ok   23.1 MB  /assets/papers/714873_0_art_file_12507139_tc63sw_convrt.pdf
-  ok    3.7 MB  /assets/papers/JGR-Solid-Earth-2025-Yun-Effects-of-Stress.pdf
-  ok   23.1 MB  /assets/papers/Melgar-srl-2025318.1.pdf
-  ok    5.8 MB  /assets/papers/science.adj9587.pdf
-  ok    2.6 MB  /assets/papers/JGR-Solid-Earth-2025-Yun-Controls-of-Dynamic.pdf
-  ok    5.4 MB  /assets/papers/63035094_File000000_1532406019.pdf
-  ok   10.2 MB  /assets/papers/Dynamic_normal_faulting_SANCHEZ-REYES_revised.pdf
-  ok    1.4 MB  /assets/papers/srl-2017222.1.pdf
-  ok    4.8 MB  /assets/papers/1-s2.0-S0012821X2600244X-main-1.pdf
-  ok   13.8 MB  /assets/papers/s41586-023-05985-x-3.pdf
-  ok    3.3 MB  /assets/papers/Fused_ensembles_of_dynamic_rupture_earthquake.pdf
-  ok    6.6 MB  /assets/papers/Rekoske_et_al_CyberShake_Submitted.pdf
-  ok    2.8 MB  /assets/papers/DuruEtAl-JSC-2021-s10915-021-01565-1.pdf
-  ok   31.9 MB  /assets/papers/47795_0_art_file_435452_svzwq8_convrt.pdf
-  ok   24.6 MB  /assets/papers/2024-12-10_haiti_dynamic_SUBMITTED.pdf
-  ok    6.2 MB  /assets/papers/Biemiller-s41467-023-37063-1.pdf
-  ok    2.7 MB  /assets/papers/Stat-2019-Happ.pdf
-  ok   57.5 MB  /assets/papers/Marchandon_2025.pdf
-  ok   20.1 MB  /assets/papers/Gabriel-TSR-2023028.pdf
-  ok    0.3 MB  /assets/papers/srl-2022266.1.pdf
-  ok    3.4 MB  /assets/papers/Sahakian-srl-2025423.1.pdf
-  ok    0.5 MB  /assets/papers/1047069_0_merged_1756716223_small.pdf
-  ok    8.0 MB  /assets/papers/srl-2024122.1.pdf
-  ok    6.4 MB  /assets/papers/2938615.2938618.pdf
-  ok   39.9 MB  /assets/papers/2407.12361v1.pdf
-  ok    9.8 MB  /assets/papers/seissol_mtmlda.pdf
   FAILED  https://storage.e.jimdo.com/file/deddef62-387f-4716-b801-52bb6a6900b9/AGabriel_CV_Short_July_2026.pdf
-          HTTP 404 (Server: cloudflare; cf-ray: a48b5f23c880dcfa-LAX; page says: Not Found Not Found The requested resource was not found on this server.)
-  ok    3.6 MB  /assets/papers/997517_0_merged_1717162199.pdf
-  ok   11.5 MB  /assets/papers/Jia-science.adi0685.pdf
-  ok   46.8 MB  /assets/papers/marchandon_et_al_preprint.pdf
-  ok    6.1 MB  /assets/papers/1-s2.0-S0012821X25006144-main-1.pdf
-  ok    2.1 MB  /assets/papers/yen-et-al-2025.pdf
+          HTTP 404 (Server: cloudflare; cf-ray: a48b9aec9de8a203-MSP; page says: Not Found Not Found The requested resource was not found on this server.)
   total 441 MB
+
+3. Pictures
+  home                     18 pictures downloaded and placed
+  site icon saved as /assets/img/site-icon.png (17 KB)
+
+4. YouTube videos found on each page (for the open video slots)
+  home                     JvMuQN4FuvU, JpwcWkPuc9A, HUJCktfPqXk, KMirUfgbEv0
+
+5. Comparing the text of the old and new pages
+  0 difference(s) in text or link targets. Details: tools/jimdo-snapshot/text-check.txt
 
 Done.
   files copied:   35 of 36
-  pictures:       
+  pictures:       home 18
   1 file(s) could not be copied. Their links still point at Jimdo.
-  open slots left: 52 (IMPORT:about-me-01, IMPORT:about-me-02, IMPORT:about-me-03, IMPORT:about-me-04, IMPORT:about-me-05, IMPORT:about-me-06, IMPORT:home-01, IMPORT:home-02 ...)
+  open slots left: 31 (IMPORT:about-me-01, IMPORT:about-me-02, IMPORT:about-me-03, IMPORT:about-me-04, IMPORT:about-me-05, IMPORT:about-me-06, IMPORT:in-the-media-01, IMPORT:in-the-media-video-2 ...)
   A full record is in tools/jimdo-snapshot/manifest.json
