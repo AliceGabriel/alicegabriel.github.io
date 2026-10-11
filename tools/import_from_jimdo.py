@@ -532,6 +532,47 @@ def import_pictures(repo, page_sources, manifest, dry_run):
 
 # ---------------------------------------------------------------- videos
 
+VIDEO_IN_MARKDOWN = re.compile(r"""(?:video\.html\s+id=|^\s*-\s*id:\s*)["']([A-Za-z0-9_-]{11})["']""", re.M)
+
+
+def import_video_stills(repo, manifest, dry_run):
+    """A still picture for every video the new pages show, kept in assets/img/video/.
+
+    With the still in the repository, a page loads nothing from YouTube until the
+    visitor presses play.
+    """
+    wanted = []
+    for _, _, md_name in PAGES:
+        md_path = repo / md_name
+        if md_path.exists():
+            for video in VIDEO_IN_MARKDOWN.findall(md_path.read_text(encoding="utf-8")):
+                if video not in wanted:
+                    wanted.append(video)
+    directory = repo / "assets" / "img" / "video"
+    record = manifest.setdefault("video_stills", [])
+    for video in wanted:
+        target = directory / f"{video}.jpg"
+        if target.exists():
+            record.append({"id": video, "status": "already there", "to": "/" + target.relative_to(repo).as_posix()})
+            continue
+        entry = {"id": video}
+        record.append(entry)
+        for size in ("maxresdefault", "sddefault", "hqdefault"):
+            url = f"https://i.ytimg.com/vi/{video}/{size}.jpg"
+            try:
+                data, kind = fetch(url, accept="image/jpeg,image/*;q=0.8")
+            except Exception as error:  # noqa: BLE001 - the next size is tried
+                entry["status"] = f"failed: {error}"
+                continue
+            if kind == "image/jpeg" and len(data) > 2000:
+                entry.update(status="ok", to="/" + target.relative_to(repo).as_posix(), bytes=len(data), fetched=url)
+                if not dry_run:
+                    directory.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(data)
+                break
+        log(f"  still for video {video}: {entry.get('status')}")
+
+
 def list_videos(page_sources, manifest):
     for name, _, _ in PAGES:
         source = page_sources.get(name)
@@ -718,7 +759,7 @@ def main():
     parser.add_argument("--site", default=SITE, help="address of the Jimdo site (default: %(default)s)")
     parser.add_argument("--dry-run", action="store_true", help="download and report, but do not write into the site")
     parser.add_argument("--offline", action="store_true", help="reuse the saved page copies instead of reading the site again")
-    parser.add_argument("--skip", default="", help="comma-separated steps to leave out: files, pictures, videos, text")
+    parser.add_argument("--skip", default="", help="comma-separated steps to leave out: files, pictures, videos, stills, text")
     args = parser.parse_args()
     skip = {s.strip() for s in args.skip.split(",") if s.strip()}
 
@@ -727,7 +768,7 @@ def main():
         sys.exit("Run this from the website repository (the folder that contains _config.yml).")
     snapshot = repo / "tools" / "jimdo-snapshot"
     snapshot.mkdir(parents=True, exist_ok=True)
-    manifest = {"site": args.site, "files": [], "pictures": [], "videos": []}
+    manifest = {"site": args.site, "files": [], "pictures": [], "videos": [], "video_stills": []}
     earlier = {}
     if (snapshot / "manifest.json").exists():
         try:
@@ -759,6 +800,9 @@ def main():
     if "videos" not in skip:
         log("\n4. YouTube videos found on each page (for the open video slots)")
         list_videos(page_sources, manifest)
+    if "stills" not in skip:
+        log("\n   Still pictures for the videos on the new pages")
+        import_video_stills(repo, manifest, args.dry_run)
     if "text" not in skip:
         log("\n5. Comparing the text of the old and new pages")
         copied = {f["from"]: f["to"] for f in manifest["files"] if f.get("status") == "ok" and f.get("to")}
