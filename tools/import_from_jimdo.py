@@ -27,7 +27,10 @@ import html
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -49,10 +52,24 @@ PAGES = [
     ("teaching", "/teaching/", "teaching.md"),
 ]
 
-USER_AGENT = (
+# How a request introduces itself. Jimdo's servers turn some combinations away
+# (HTTP 403), so each host is tried with the next one until one is accepted.
+SCRIPT_AGENT = "alicegabriel-site-migration/1.0 (+https://github.com/AliceGabriel/alicegabriel.github.io)"
+BROWSER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/126.0 Safari/537.36 site-migration-script"
+    "Chrome/126.0.0.0 Safari/537.36"
 )
+REQUEST_STYLES = [
+    ("python", SCRIPT_AGENT),
+    ("python, browser name", BROWSER_AGENT),
+    ("curl", SCRIPT_AGENT),
+    ("curl, browser name", BROWSER_AGENT),
+]
+REFUSED = (403, 406, 429, 503)   # answers that mean "not for you", as opposed to "not there"
+accepted_style = {}              # host -> position in REQUEST_STYLES that worked last
+refusals_logged = {}             # host -> number of refusals already written to the log
+strikes = {}                     # host -> requests in a row that failed in every style
+GIVE_UP_AFTER = 4                # stop asking a host that keeps turning everything away
 GITHUB_FILE_LIMIT = 95 * 1024 * 1024  # GitHub refuses files of 100 MB and more
 
 FILE_URL = re.compile(r"https://storage\.e\.jimdo\.com/file/[0-9a-fA-F-]{36}/[^\s\"'<>\\]+")
@@ -76,22 +93,118 @@ def log(message=""):
     print(message, flush=True)
 
 
-def fetch(url, accept="*/*", tries=3, pause=0.3):
-    """Return (bytes, content type). Raises the last error after a few tries."""
-    last = None
-    for attempt in range(tries):
-        try:
-            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
-            with urllib.request.urlopen(request, timeout=90) as response:
-                data = response.read()
-                kind = (response.headers.get("Content-Type") or "").split(";")[0].strip().lower()
-            time.sleep(pause)
+class Refused(Exception):
+    """The server answered, but turned the request away."""
+
+    def __init__(self, url, code, detail=""):
+        super().__init__(f"HTTP {code}{' (' + detail + ')' if detail else ''}")
+        self.url, self.code, self.detail = url, code, detail
+
+
+def describe_answer(headers, body):
+    """The few response details that tell a missing page from a blocked request."""
+    parts = []
+    for name in ("Server", "cf-mitigated", "cf-ray", "x-amzn-waf-action", "x-cache", "Retry-After"):
+        value = headers.get(name) if headers else None
+        if value:
+            parts.append(f"{name}: {value}")
+    text = re.sub(r"\s+", " ", re.sub(rb"<[^>]+>", b" ", body or b"").decode("utf-8", errors="replace")).strip()
+    if text:
+        parts.append("page says: " + text[:160])
+    return "; ".join(parts)
+
+
+def get_with_python(url, agent, accept):
+    request = urllib.request.Request(url, headers={
+        "User-Agent": agent, "Accept": accept, "Accept-Language": "en-US,en;q=0.9",
+    })
+    try:
+        with urllib.request.urlopen(request, timeout=90) as response:
+            data = response.read()
+            kind = (response.headers.get("Content-Type") or "").split(";")[0].strip().lower()
             return data, kind
-        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as error:
-            last = error
-            if isinstance(error, urllib.error.HTTPError) and error.code in (400, 401, 403, 404, 410):
-                break
-            time.sleep(1.5 * (attempt + 1))
+    except urllib.error.HTTPError as error:
+        body = b""
+        try:
+            body = error.read(4000)
+        except Exception:  # noqa: BLE001 - the body is only used for the log
+            pass
+        raise Refused(url, error.code, describe_answer(error.headers, body)) from None
+
+
+def get_with_curl(url, agent, accept):
+    """The same request sent by the curl program, which some servers accept where Python is refused."""
+    if not shutil.which("curl"):
+        raise Refused(url, 0, "curl is not installed")
+    with tempfile.TemporaryDirectory() as folder:
+        body_file, head_file = os.path.join(folder, "body"), os.path.join(folder, "head")
+        done = subprocess.run(
+            ["curl", "--silent", "--show-error", "--location", "--compressed", "--max-time", "120",
+             "--user-agent", agent, "--header", f"Accept: {accept}", "--header", "Accept-Language: en-US,en;q=0.9",
+             "--output", body_file, "--dump-header", head_file, "--write-out", "%{http_code}\n%{content_type}", url],
+            capture_output=True, text=True, check=False,
+        )
+        if done.returncode != 0:
+            raise OSError(f"curl: {done.stderr.strip()[:200] or 'error ' + str(done.returncode)}")
+        code_text, _, kind = done.stdout.partition("\n")
+        code = int(code_text) if code_text.strip().isdigit() else 0
+        data = Path(body_file).read_bytes() if os.path.exists(body_file) else b""
+        if code >= 400 or code == 0:
+            headers = {}
+            if os.path.exists(head_file):
+                for line in Path(head_file).read_text(encoding="latin-1").splitlines():
+                    name, colon, value = line.partition(":")
+                    if colon:
+                        headers[name.strip()] = value.strip()
+            lookup = {k.lower(): v for k, v in headers.items()}
+            raise Refused(url, code, describe_answer({n: lookup.get(n.lower()) for n in
+                                                      ("Server", "cf-mitigated", "cf-ray", "x-amzn-waf-action", "x-cache", "Retry-After")}, data[:4000]))
+        return data, kind.split(";")[0].strip().lower()
+
+
+def fetch(url, accept="*/*", tries=3, pause=0.3):
+    """Return (bytes, content type). Raises the last error after a few tries.
+
+    A request that the server turns away (HTTP 403 and similar) is repeated in the
+    next request style. The style that works for a host is remembered.
+    """
+    host = urllib.parse.urlsplit(url).netloc
+    if strikes.get(host, 0) >= GIVE_UP_AFTER:
+        raise Refused(url, 0, f"{host} turned away {GIVE_UP_AFTER} requests in a row in every request style; not asking again")
+    first = accepted_style.get(host, 0)
+    order = list(range(first, len(REQUEST_STYLES))) + list(range(0, first))
+    last = None
+    for position in order:
+        style, agent = REQUEST_STYLES[position]
+        getter = get_with_curl if style.startswith("curl") else get_with_python
+        for attempt in range(tries):
+            try:
+                data, kind = getter(url, agent, accept)
+                if accepted_style.get(host) != position:
+                    accepted_style[host] = position
+                    if position:
+                        log(f"    ({host} accepts requests sent as: {style})")
+                strikes[host] = 0
+                time.sleep(pause)
+                return data, kind
+            except Refused as error:
+                last = error
+                if error.code not in REFUSED:
+                    if error.code in (400, 401, 404, 410):
+                        strikes[host] = 0      # the server answers us; this one file is not there
+                        raise
+                    break                      # curl missing, or an answer no retry will change
+                if refusals_logged.get(host, 0) < len(REQUEST_STYLES) * 2:
+                    refusals_logged[host] = refusals_logged.get(host, 0) + 1
+                    log(f"    refused [{style}] {url[:110]}\n            {error}")
+                if error.code in (429, 503) and attempt + 1 < tries:
+                    time.sleep(4 * (attempt + 1))
+                    continue
+                break                          # try the next request style
+            except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as error:
+                last = error
+                time.sleep(1.5 * (attempt + 1))
+    strikes[host] = strikes.get(host, 0) + 1
     raise last
 
 
@@ -538,6 +651,8 @@ def main():
         except (ValueError, KeyError, TypeError):
             earlier = {}
 
+    log(f"Import from {args.site}, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}, Python {sys.version.split()[0]}"
+        + (", on GitHub" if os.environ.get("GITHUB_ACTIONS") else ""))
     log("1. Saving a copy of each Jimdo page")
     page_sources = save_pages(args.site.rstrip("/"), snapshot, args.offline)
     if not page_sources:

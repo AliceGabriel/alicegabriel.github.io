@@ -1,8 +1,9 @@
 name: Import pictures and PDFs from Jimdo
 
-# Run by hand, once, while the Jimdo site is still online:
+# Run by hand, while the Jimdo site is still online:
 # open the "Actions" tab of the repository, choose this workflow, press "Run workflow".
 # It copies the pictures and PDFs into the repository. tools/import_from_jimdo.py explains the details.
+# What the run printed is kept in tools/jimdo-snapshot/import-log.txt.
 on:
   workflow_dispatch:
 
@@ -17,9 +18,13 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Copy pictures and PDFs from the Jimdo site
-        run: python3 tools/import_from_jimdo.py
+        run: |
+          set -o pipefail
+          mkdir -p tools/jimdo-snapshot
+          python3 tools/import_from_jimdo.py 2>&1 | tee tools/jimdo-snapshot/import-log.txt
 
       - name: Save the result to the repository
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
