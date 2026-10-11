@@ -249,7 +249,13 @@ def save_pages(site, snapshot, offline):
         try:
             data, _ = fetch(site + address, accept="text/html,*/*;q=0.8")
         except Exception as error:  # noqa: BLE001 - report and carry on with the other pages
-            log(f"  could not read {site + address}: {error}")
+            if target.exists() and target.stat().st_size > 2000:
+                # A copy saved earlier, for example with the browser's "Save Page As".
+                result[name] = target.read_text(encoding="utf-8", errors="replace")
+                log(f"  using the saved copy of {address} ({target.stat().st_size / 1024:.0f} KB); "
+                    f"the site did not answer from here: {str(error)[:60]}")
+            else:
+                log(f"  could not read {site + address}: {error}")
             continue
         target.write_bytes(data)
         result[name] = data.decode("utf-8", errors="replace")
@@ -656,7 +662,12 @@ def main():
     log("1. Saving a copy of each Jimdo page")
     page_sources = save_pages(args.site.rstrip("/"), snapshot, args.offline)
     if not page_sources:
-        sys.exit("No page could be read. Is the Jimdo site still online and is this computer online?")
+        # Jimdo's servers turn away some networks (GitHub's among them). The PDFs sit on a
+        # different server and their addresses are in the Markdown pages, so they can
+        # still be copied. Pictures, videos and the text check need the page copies.
+        log("\nNo page could be read from here, and no saved copies are in tools/jimdo-snapshot/pages/.")
+        log("Continuing with the PDFs only. Pictures, videos and the text check are left out.")
+        skip |= {"pictures", "videos", "text"}
 
     if "files" not in skip:
         log("\n2. PDFs and other files")
