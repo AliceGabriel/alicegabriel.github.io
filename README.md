@@ -95,8 +95,11 @@ The "Actions" tab of the repository shows the error message. Correcting the line
 
 Pictures that have not been copied yet are written as `IMPORT:name` in the page files and show as grey boxes.
 
-1. **Copy pictures and PDFs.** While the Jimdo site is still online, run the import once. Either on github.com: "Actions" tab, "Import pictures and PDFs from Jimdo", "Run workflow". Or on a computer with Python 3, in a copy of this repository: `python3 tools/import_from_jimdo.py`, then commit and push. The script saves a copy of every Jimdo page in `tools/jimdo-snapshot/`, downloads the files, fills the picture slots where it can do so with certainty, and writes a comparison of the old and new text to `tools/jimdo-snapshot/text-check.txt`.
-2. **Check the test address.** With Pages switched on (repository "Settings", "Pages", "Deploy from a branch", branch `main`, folder `/ (root)`), the site is at `https://alicegabriel.github.io/`.
+1. **Copy pictures and PDFs.** The import runs on github.com: "Actions" tab, "Import pictures and PDFs from Jimdo", "Run workflow". It downloads the files, fills the picture slots where it can do so with certainty, writes a comparison of the old and new text to `tools/jimdo-snapshot/text-check.txt`, and keeps what it printed in `tools/jimdo-snapshot/import-log.txt`.
+   - The paper PDFs were copied in October 2026 and are in `assets/papers/`.
+   - Jimdo's page server turns away requests from GitHub, so the import cannot read the Jimdo pages itself. It uses copies saved from a browser ("Save Page As", HTML only) in `tools/jimdo-snapshot/pages/`, named `home.html`, `team.html`, `publications.html`, `projects.html`, `about-me.html`, `in-the-media.html`, `codes-and-hpc-training.html` and `teaching.html`. The pictures themselves sit on a different Jimdo server that GitHub can reach.
+   - On a computer where the Jimdo site opens normally, `python3 tools/import_from_jimdo.py` in a copy of this repository does the same without saved pages.
+2. **Check the test address.** GitHub publishes the site at `https://alicegabriel.github.io/` once the repository is public and Pages is switched on (repository "Settings", "Pages", "Deploy from a branch", branch `main`, folder `/ (root)`). A private repository is published only on a paid GitHub plan.
 3. **Move the domain.** Transfer `alicegabriel.com` from Jimdo to another registrar. At the new registrar set these DNS records:
 
    | Type | Name | Value |
