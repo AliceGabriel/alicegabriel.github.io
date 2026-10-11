@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About Me
+# The picture shown when a link to this page is shared.
+image: "/assets/img/about-me/01-32fb9152.jpg"
 permalink: /about-me/
 body_class: page-about
 ---

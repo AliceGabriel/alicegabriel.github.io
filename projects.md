@@ -1,6 +1,8 @@
 ---
 layout: cards
 title: Projects
+# The picture shown when a link to this page is shared.
+image: "/assets/img/projects/01-1057a31b.jpg"
 permalink: /projects/
 body_class: page-projects
 

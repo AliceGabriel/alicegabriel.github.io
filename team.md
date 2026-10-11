@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Team
+# The picture shown when a link to this page is shared.
+image: "/assets/img/team/01-e25ad72e.jpg"
 permalink: /team/
 body_class: page-team
 description: "Our group’s research bridges space-time scales as well as disciplines within Geophysics, Computer Science and Applied Mathematics."
