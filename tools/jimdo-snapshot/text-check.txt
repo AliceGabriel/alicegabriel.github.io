@@ -15,8 +15,8 @@ Lines marked [link] are link addresses on the Jimdo page that the new page does 
    [ 85% of it found]  [13] K. Duru*, A.-A. Gabriel and G. Kreiss (2019), “On energy stable discontinuous Galerkin spectral element ap- proximations of the perfectly matched layer for the wave equation”, Comput. Methods Appl. Mech. Eng., 350, 898-937, doi:10.1016/j.cma.2019.02.036. [pdf]
    [ 86% of it found]  [6] A. Breuer*, A. Heinecke*, S. Rettenberger*, M. Bader, A.-A. Gabriel, C. Pelties* (2014), “Sustained Petascale Perfor- mance of Seismic Simulations with SeisSol on SuperMUC”, PRACE ISC Award 2014, International Supercomputing Conference (ISC) Proceedings, 8488, 1–18. doi: 10.1007/978-3-319-07518-1_1. [pdf]
    link targets missing from the new page: 2  (plus 7 expired download links left out on purpose)
-   [link] https://doi.org/10.48550/arXiv.2407.12361
-   [link] https://doi.org/10.26443/seismica.v2i4.1427
+   [link] https://arxiv.org/abs/2407.12361
+   [link] https://seismica.library.mcgill.ca/article/view/1427
 
 == /projects/  (56 text blocks on the Jimdo page, 2 not found word for word)
    [ 88% of it found]  GPU Performance and Feature Enhancement of the Earthquake Cycle Simulation Software Tan-

@@ -552,7 +552,7 @@
     },
     {
       "page": "team",
-      "slots_in_new_page": 4,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 4,
       "pictures": [
         {
@@ -564,10 +564,8 @@
             "width": "2560",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/team/01-e25ad72e.jpg",
-          "bytes": 423507,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511111679/e25ad72e-cc0e-4ef7-bfaa-77a67a355df6.jpg"
+          "status": "already there",
+          "to": "/assets/img/team/01-e25ad72e.jpg"
         },
         {
           "order": 2,
@@ -578,10 +576,8 @@
             "width": "2560",
             "height": "2360"
           },
-          "status": "ok",
-          "to": "/assets/img/team/02-4d926a38.jpg",
-          "bytes": 428299,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511112937/4d926a38-8574-4562-923b-1605d24345e0.jpg"
+          "status": "already there",
+          "to": "/assets/img/team/02-4d926a38.jpg"
         },
         {
           "order": 3,
@@ -592,10 +588,8 @@
             "width": "2560",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/team/03-caf4d268.jpg",
-          "bytes": 377744,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511112669/caf4d268-1f02-44f9-b806-e3d05ed316f8.jpg"
+          "status": "already there",
+          "to": "/assets/img/team/03-caf4d268.jpg"
         },
         {
           "order": 4,
@@ -606,17 +600,15 @@
             "width": "2560",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/team/04-5ea2ac5e.jpg",
-          "bytes": 309907,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511505896/5ea2ac5e-b815-4886-b4f4-ad3ecd6087f0.jpg"
+          "status": "already there",
+          "to": "/assets/img/team/04-5ea2ac5e.jpg"
         }
       ],
-      "placed": true
+      "placed": false
     },
     {
       "page": "publications",
-      "slots_in_new_page": 1,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 1,
       "pictures": [
         {
@@ -627,17 +619,15 @@
             "width": "1600",
             "height": "1213"
           },
-          "status": "ok",
-          "to": "/assets/img/publications/01-123795bf.webp",
-          "bytes": 161160,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=88,format=webp,fit=scale-down,width=1600,height=1600/image/511111258/123795bf-cbc7-4e4c-8fe3-e63eabc311a7.png"
+          "status": "already there",
+          "to": "/assets/img/publications/01-123795bf.webp"
         }
       ],
-      "placed": true
+      "placed": false
     },
     {
       "page": "projects",
-      "slots_in_new_page": 17,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 17,
       "pictures": [
         {
@@ -649,10 +639,8 @@
             "width": "800",
             "height": "800"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/01-1057a31b.jpg",
-          "bytes": 214060,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514276598/1057a31b-adcf-4283-9ef4-bb71adc307f0.png"
+          "status": "already there",
+          "to": "/assets/img/projects/01-1057a31b.jpg"
         },
         {
           "order": 2,
@@ -663,10 +651,8 @@
             "width": "320",
             "height": "320"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/02-f4e62320.jpg",
-          "bytes": 134743,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514285966/f4e62320-f04d-43d9-9df5-859dd45e5feb.jpg"
+          "status": "already there",
+          "to": "/assets/img/projects/02-f4e62320.jpg"
         },
         {
           "order": 3,
@@ -677,10 +663,8 @@
             "width": "480",
             "height": "480"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/03-993a031d.png",
-          "bytes": 139812,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514276924/993a031d-1d12-4256-a68e-4222cc55d882.png"
+          "status": "already there",
+          "to": "/assets/img/projects/03-993a031d.png"
         },
         {
           "order": 4,
@@ -691,10 +675,8 @@
             "width": "1024",
             "height": "1024"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/04-32c4a611.png",
-          "bytes": 44962,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514277595/32c4a611-7403-4e07-a502-53b6d7c06cca.png"
+          "status": "already there",
+          "to": "/assets/img/projects/04-32c4a611.png"
         },
         {
           "order": 5,
@@ -705,10 +687,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/05-ed30611b.png",
-          "bytes": 10312,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514277889/ed30611b-4f2c-4c85-8f29-755d10d05508.png"
+          "status": "already there",
+          "to": "/assets/img/projects/05-ed30611b.png"
         },
         {
           "order": 6,
@@ -719,10 +699,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/06-86e69b37.png",
-          "bytes": 7769,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514858736/86e69b37-6702-4847-a0e9-7fd7018fbe3a.png"
+          "status": "already there",
+          "to": "/assets/img/projects/06-86e69b37.png"
         },
         {
           "order": 7,
@@ -733,10 +711,8 @@
             "width": "1280",
             "height": "1280"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/07-ec51a9db.png",
-          "bytes": 39599,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514278403/ec51a9db-ecdb-414f-874c-ccbd663529df.png"
+          "status": "already there",
+          "to": "/assets/img/projects/07-ec51a9db.png"
         },
         {
           "order": 8,
@@ -747,10 +723,8 @@
             "width": "320",
             "height": "320"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/08-14549c81.png",
-          "bytes": 17347,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514293534/14549c81-77ef-4ae8-ae0b-1c8cf424fae7.png"
+          "status": "already there",
+          "to": "/assets/img/projects/08-14549c81.png"
         },
         {
           "order": 9,
@@ -761,10 +735,8 @@
             "width": "1024",
             "height": "1024"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/09-05be68b5.jpg",
-          "bytes": 57913,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514278636/05be68b5-72b4-4c11-aa38-86e073c181f6.jpg"
+          "status": "already there",
+          "to": "/assets/img/projects/09-05be68b5.jpg"
         },
         {
           "order": 10,
@@ -775,10 +747,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/10-2d9d4f34.png",
-          "bytes": 4281,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514279418/2d9d4f34-51fd-477e-8e91-6699b82ae50f.png"
+          "status": "already there",
+          "to": "/assets/img/projects/10-2d9d4f34.png"
         },
         {
           "order": 11,
@@ -789,10 +759,8 @@
             "width": "1024",
             "height": "1024"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/11-638a208a.png",
-          "bytes": 24794,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514279786/638a208a-771e-4493-953e-b6365bde5748.png"
+          "status": "already there",
+          "to": "/assets/img/projects/11-638a208a.png"
         },
         {
           "order": 12,
@@ -803,10 +771,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/12-804acf82.png",
-          "bytes": 5540,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514290717/804acf82-a1c4-443f-9d49-85451cc33466.png"
+          "status": "already there",
+          "to": "/assets/img/projects/12-804acf82.png"
         },
         {
           "order": 13,
@@ -817,10 +783,8 @@
             "width": "1024",
             "height": "1024"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/13-f937e1e0.png",
-          "bytes": 44900,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514291075/f937e1e0-8a6f-4b1f-a4e4-731df2ebdb2b.png"
+          "status": "already there",
+          "to": "/assets/img/projects/13-f937e1e0.png"
         },
         {
           "order": 14,
@@ -831,10 +795,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/14-caf041ef.png",
-          "bytes": 38510,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514292409/caf041ef-2a72-4feb-b7c6-bc971376a0c1.png"
+          "status": "already there",
+          "to": "/assets/img/projects/14-caf041ef.png"
         },
         {
           "order": 15,
@@ -845,10 +807,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/15-aad825d6.jpg",
-          "bytes": 18338,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514300792/aad825d6-fd89-43a8-a9df-6b4940a2b8ee.webp"
+          "status": "already there",
+          "to": "/assets/img/projects/15-aad825d6.jpg"
         },
         {
           "order": 16,
@@ -859,10 +819,8 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/16-805a3a6d.png",
-          "bytes": 3203,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514301323/805a3a6d-625f-4673-b76d-6411224bdd17.png"
+          "status": "already there",
+          "to": "/assets/img/projects/16-805a3a6d.png"
         },
         {
           "order": 17,
@@ -873,17 +831,15 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/projects/17-84e5ce58.jpg",
-          "bytes": 38726,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514304064/84e5ce58-33f3-476f-a25b-ea5992c6883f.png"
+          "status": "already there",
+          "to": "/assets/img/projects/17-84e5ce58.jpg"
         }
       ],
-      "placed": true
+      "placed": false
     },
     {
       "page": "about-me",
-      "slots_in_new_page": 6,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 6,
       "pictures": [
         {
@@ -895,10 +851,8 @@
             "width": "800",
             "height": "800"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/01-32fb9152.jpg",
-          "bytes": 107146,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/437967010/32fb9152-4fef-452f-9832-dcf52318a810.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/01-32fb9152.jpg"
         },
         {
           "order": 2,
@@ -909,10 +863,8 @@
             "width": "2560",
             "height": "2560"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/02-e0881f29.jpg",
-          "bytes": 422696,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/457508466/e0881f29-ee3a-4022-aab7-79d53d0aa4da.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/02-e0881f29.jpg"
         },
         {
           "order": 3,
@@ -923,10 +875,8 @@
             "width": "1920",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/03-4a6afafe.jpg",
-          "bytes": 382443,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/449778812/4a6afafe-46ad-4431-b85b-5dda286200f1.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/03-4a6afafe.jpg"
         },
         {
           "order": 4,
@@ -937,10 +887,8 @@
             "width": "2560",
             "height": "2560"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/04-cab9b863.jpg",
-          "bytes": 461045,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/449113249/cab9b863-0752-4ace-88ea-892c9960ad82.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/04-cab9b863.jpg"
         },
         {
           "order": 5,
@@ -951,10 +899,8 @@
             "width": "1440",
             "height": "1440"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/05-b4b078f0.jpg",
-          "bytes": 432053,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/522628005/b4b078f0-c5df-4dcc-ae36-b5f9de51a245.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/05-b4b078f0.jpg"
         },
         {
           "order": 6,
@@ -965,17 +911,15 @@
             "width": "320",
             "height": "320"
           },
-          "status": "ok",
-          "to": "/assets/img/about-me/06-edfb3017.jpg",
-          "bytes": 25340,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/470374503/edfb3017-7606-4d46-b3dd-e74fb004829e.jpg"
+          "status": "already there",
+          "to": "/assets/img/about-me/06-edfb3017.jpg"
         }
       ],
-      "placed": true
+      "placed": false
     },
     {
       "page": "in-the-media",
-      "slots_in_new_page": 1,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 1,
       "pictures": [
         {
@@ -987,13 +931,11 @@
             "width": "160",
             "height": "160"
           },
-          "status": "ok",
-          "to": "/assets/img/in-the-media/01-dc9d2545.png",
-          "bytes": 33119,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/522627805/dc9d2545-76aa-4cb0-8f5d-39a17a740bd5.png"
+          "status": "already there",
+          "to": "/assets/img/in-the-media/01-dc9d2545.png"
         }
       ],
-      "placed": true
+      "placed": false
     },
     {
       "page": "codes-and-hpc-training",
@@ -1092,6 +1034,64 @@
     {
       "page": "teaching",
       "videos": []
+    }
+  ],
+  "video_stills": [
+    {
+      "id": "JvMuQN4FuvU",
+      "status": "ok",
+      "to": "/assets/img/video/JvMuQN4FuvU.jpg",
+      "bytes": 63484,
+      "fetched": "https://i.ytimg.com/vi/JvMuQN4FuvU/maxresdefault.jpg"
+    },
+    {
+      "id": "JpwcWkPuc9A",
+      "status": "ok",
+      "to": "/assets/img/video/JpwcWkPuc9A.jpg",
+      "bytes": 135000,
+      "fetched": "https://i.ytimg.com/vi/JpwcWkPuc9A/maxresdefault.jpg"
+    },
+    {
+      "id": "HUJCktfPqXk",
+      "status": "ok",
+      "to": "/assets/img/video/HUJCktfPqXk.jpg",
+      "bytes": 112811,
+      "fetched": "https://i.ytimg.com/vi/HUJCktfPqXk/maxresdefault.jpg"
+    },
+    {
+      "id": "KMirUfgbEv0",
+      "status": "ok",
+      "to": "/assets/img/video/KMirUfgbEv0.jpg",
+      "bytes": 93240,
+      "fetched": "https://i.ytimg.com/vi/KMirUfgbEv0/maxresdefault.jpg"
+    },
+    {
+      "id": "gAUaCm1mVA0",
+      "status": "ok",
+      "to": "/assets/img/video/gAUaCm1mVA0.jpg",
+      "bytes": 14671,
+      "fetched": "https://i.ytimg.com/vi/gAUaCm1mVA0/sddefault.jpg"
+    },
+    {
+      "id": "PBczPAzr2Rk",
+      "status": "ok",
+      "to": "/assets/img/video/PBczPAzr2Rk.jpg",
+      "bytes": 46872,
+      "fetched": "https://i.ytimg.com/vi/PBczPAzr2Rk/maxresdefault.jpg"
+    },
+    {
+      "id": "nFdRdbmLHHM",
+      "status": "ok",
+      "to": "/assets/img/video/nFdRdbmLHHM.jpg",
+      "bytes": 49692,
+      "fetched": "https://i.ytimg.com/vi/nFdRdbmLHHM/sddefault.jpg"
+    },
+    {
+      "id": "TAue0hEGD-k",
+      "status": "ok",
+      "to": "/assets/img/video/TAue0hEGD-k.jpg",
+      "bytes": 53337,
+      "fetched": "https://i.ytimg.com/vi/TAue0hEGD-k/maxresdefault.jpg"
     }
   ],
   "files_total_bytes": 441276011,
