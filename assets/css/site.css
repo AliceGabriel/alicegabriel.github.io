@@ -241,22 +241,8 @@ img.pending { background: var(--tint); }
 }
 
 /* ---------- Home: name block ---------- */
-.hero {
-  position: relative;
-  overflow: hidden;
-  border-bottom: 1px solid var(--rule);
-}
-.hero-mesh {
-  position: absolute;
-  inset: 0 0 0 34%;
-  background: url("../img/mesh.svg") right center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 42%);
-  mask-image: linear-gradient(to right, transparent 0, #000 42%);
-}
-.hero-inner {
-  position: relative;
-  padding-block: clamp(3rem, 8vw, 5.5rem) clamp(2.5rem, 6vw, 4.25rem);
-}
+.hero { border-bottom: 1px solid var(--rule); }
+.hero-inner { padding-block: clamp(2.5rem, 6.5vw, 4.5rem) clamp(2rem, 5vw, 3.25rem); }
 .hero-name {
   font-size: clamp(2.375rem, 6.2vw, 4.25rem);
   line-height: 1.02;
@@ -519,21 +505,9 @@ img.pending { background: var(--tint); }
   .js .site-nav ul { flex-direction: column; gap: 0; padding-top: 0.5rem; }
   .js .site-nav a { display: block; padding-block: 0.5rem; }
   .js .site-nav a[aria-current="page"] { box-shadow: inset 2px 0 0 var(--red); padding-left: 0.75rem; }
-  .hero-mesh { inset: 0 0 0 30%; opacity: 0.7; }
 }
 @media (max-width: 46rem) {
   body { font-size: 1rem; }
-  /* The graphic becomes a strip above the name, so no line crosses the text. */
-  .hero-mesh {
-    inset: 0 0 auto 0;
-    height: 7.5rem;
-    opacity: 1;
-    background-size: 46rem auto;
-    background-position: 62% 46%;
-    -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
-    mask-image: linear-gradient(to bottom, #000 35%, transparent);
-  }
-  .hero-inner { padding-top: 7.25rem; }
   .video-row-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .video-row-inner > figure:first-child { grid-column: 1 / -1; }
   .intro-inner { grid-template-columns: minmax(0, 1fr); }
@@ -546,6 +520,6 @@ img.pending { background: var(--tint); }
 }
 
 @media print {
-  .site-nav, .nav-toggle, .skip-link, .hero-mesh, .video-play { display: none !important; }
+  .site-nav, .nav-toggle, .skip-link, .video-play { display: none !important; }
   a { color: inherit; }
 }
