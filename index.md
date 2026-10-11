@@ -22,9 +22,11 @@ profiles:
 # "id" is the part after "v=" in the YouTube address.
 videos:
   - id: "JvMuQN4FuvU"
-    title: "Conversing Faults: The 2019 Ridgecrest Earthquake"
-  - id: "IMPORT:home-video-2"
-  - id: "IMPORT:home-video-3"
+    title: "SC23: Conversing Faults: The 2019 Ridgecrest Earthquake"
+  - id: "JpwcWkPuc9A"
+    title: "A Scientist's Life in 99 Seconds: Seismologist Alice Gabriel"
+  - id: "HUJCktfPqXk"
+    title: "SC '25 Art of HPC Submission by Team Cascadia"
 ---
 
 ## Research interests
@@ -77,7 +79,7 @@ New paper led by KIT PhD student Rahim Habibi and PostDoc [Thomas Ulrich](https:
 
 **Constraining on- and off-fault nonlinear dynamic rupture parameters via hierarchical Bayesian inversion for the 2019 Mw 7.1 Ridgecrest earthquake**
 
-New paper led by PhD student [Zihua Niu](https://aangniu.github.io/) with Nico Schliwa [https://scholar.google.com/citations?user=u2xDnosAAAAJ&hl=en](https://scholar.google.com/citations?user=u2xDnosAAAAJ&hl=en) published in Earth and Planetary Science Letters! Read more: post on [LinkedIn](https://www.linkedin.com/posts/alicegabriel_catching-up-here-on-a-few-papers-fromwith-share-7496673251063128064-pk6w/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARXX6kB04qxX9AH7UFGoAZiTubGL84rPRM), link to [paper](https://www.sciencedirect.com/science/article/pii/S0012821X2600244X).
+New paper led by PhD student [Zihua Niu](https://aangniu.github.io/) with Nico Schliwa published in Earth and Planetary Science Letters! Read more: post on [LinkedIn](https://www.linkedin.com/posts/alicegabriel_catching-up-here-on-a-few-papers-fromwith-share-7496673251063128064-pk6w/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARXX6kB04qxX9AH7UFGoAZiTubGL84rPRM), link to [paper](https://www.sciencedirect.com/science/article/pii/S0012821X2600244X).
 
 ***
 
@@ -175,7 +177,7 @@ Free-to-read link to the paper at: [https://science.org/stoken/author-tokens/ST-
 
 ***
 
-{% include video.html id="IMPORT:home-video-4" %}
+{% include video.html id="KMirUfgbEv0" title="The multi-event, multi-segment complexity of the 2024 M7.5 Noto Peninsula Earthquake governs tsunami" %}
 
 ### GRL paper on the 2024 New Year Noto Peninsula, Japan, earthquake and tsunami
 

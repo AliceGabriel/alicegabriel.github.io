@@ -370,22 +370,100 @@ def width_hint(url):
     return int(found.group(1)) if found else 0
 
 
+PICTURE_BOX = 1600           # longest side of a stored picture, in pixels
+HEAVY_PNG = 400 * 1024       # a PNG above this size is also requested as WebP
+PICTURE_ACCEPT = "image/png,image/jpeg,image/gif,image/svg+xml,image/*;q=0.8"
+
+
+def picture_address(run, options):
+    site_no, file_id, ext = run["key"]
+    return f"https://storage.e.jimdo.com/cdn-cgi/image/{options}/image/{site_no}/{file_id}.{ext}"
+
+
+def jimdo_frame(run):
+    """How Jimdo shows the picture: the crop ("trim", in pixels of the original:
+    top;right;bottom;left) and the frame it is fitted into."""
+    found = re.search(r"cdn-cgi/image/([^/]+)/image/", max(run["seen"], key=width_hint))
+    frame = {}
+    if found:
+        for part in found.group(1).split(","):
+            name, _, value = part.partition("=")
+            if name in ("trim", "width", "height", "fit"):
+                frame[name] = value
+    return frame
+
+
 def download_picture(run):
+    """Return (bytes, file extension, address used).
+
+    The picture is taken whole (not cropped) and scaled down to fit PICTURE_BOX,
+    in its own format. Jimdo shows many pictures cropped to a frame. That crop is
+    written to the manifest and left to the page design, so no part of a picture
+    is lost. The full-size original is only used when nothing else works.
+    """
     site_no, file_id, ext = run["key"]
     plain = f"https://storage.e.jimdo.com/image/{site_no}/{file_id}.{ext}"
-    large = f"https://storage.e.jimdo.com/cdn-cgi/image/quality=90,fit=scale-down,width=2400/image/{site_no}/{file_id}.{ext}"
+    box = f"fit=scale-down,width={PICTURE_BOX},height={PICTURE_BOX}"
+    sized = picture_address(run, "quality=85," + box)
     biggest_seen = max(run["seen"], key=width_hint)
+    order = (plain, sized, biggest_seen) if ext in ("gif", "svg") else (sized, biggest_seen, plain)
     errors = []
-    for url in (plain, large, biggest_seen):
+    for url in order:
         try:
-            data, kind = fetch(url, accept="image/png,image/jpeg,image/gif,image/svg+xml,image/*;q=0.8")
+            data, kind = fetch(url, accept=PICTURE_ACCEPT)
         except Exception as error:  # noqa: BLE001
             errors.append(f"{url}: {error}")
             continue
-        if kind.startswith("image/") and len(data) > 200:
-            return data, CONTENT_TYPES.get(kind, ext), url
-        errors.append(f"{url}: not a picture ({kind or 'unknown type'}, {len(data)} bytes)")
+        if not (kind.startswith("image/") and len(data) > 200):
+            errors.append(f"{url}: not a picture ({kind or 'unknown type'}, {len(data)} bytes)")
+            continue
+        if kind == "image/png" and len(data) > HEAVY_PNG and url == sized:
+            # A heavy PNG is usually a photo or a screenshot. WebP shows the same at a fraction of the size.
+            lighter = picture_address(run, "quality=88,format=webp," + box)
+            try:
+                data_webp, kind_webp = fetch(lighter, accept="image/webp,image/*;q=0.5")
+                if kind_webp == "image/webp" and 200 < len(data_webp) < 0.6 * len(data):
+                    return data_webp, "webp", lighter
+            except Exception:  # noqa: BLE001 - the PNG is kept
+                pass
+        return data, CONTENT_TYPES.get(kind, ext), url
     raise RuntimeError("; ".join(errors))
+
+
+ICON_LINK = re.compile(r"<link\b[^>]*\brel=[\"'](?:shortcut )?icon[\"'][^>]*>", re.I)
+
+
+def import_site_icon(repo, page_sources, manifest, dry_run):
+    """The small picture browsers show in the tab (favicon), if the Jimdo site has its own."""
+    for source in page_sources.values():
+        for tag in ICON_LINK.findall(source[: source.lower().find("<body")] if "<body" in source.lower() else source):
+            ident = IMAGE_ID.search(unescape_markup(tag))
+            if not ident:
+                continue
+            run = {"key": (ident.group(1), ident.group(2).lower(), ident.group(3).lower()), "seen": []}
+            url = picture_address(run, "quality=90,fit=cover,width=192,height=192")
+            target_stem = repo / "assets" / "img" / "site-icon"
+            existing = sorted(target_stem.parent.glob("site-icon.*")) if target_stem.parent.exists() else []
+            if existing:
+                manifest["site_icon"] = {"status": "already there", "to": "/" + existing[0].relative_to(repo).as_posix()}
+                return
+            try:
+                data, kind = fetch(url, accept=PICTURE_ACCEPT)
+            except Exception as error:  # noqa: BLE001
+                manifest["site_icon"] = {"status": f"failed: {error}", "from": url}
+                log(f"  site icon: FAILED {error}")
+                return
+            ext = CONTENT_TYPES.get(kind)
+            if not ext or len(data) < 100:
+                manifest["site_icon"] = {"status": f"failed: not a picture ({kind})", "from": url}
+                return
+            target = target_stem.with_suffix("." + ext)
+            manifest["site_icon"] = {"status": "ok", "to": "/" + target.relative_to(repo).as_posix(), "from": url, "bytes": len(data)}
+            log(f"  site icon saved as /{target.relative_to(repo).as_posix()} ({len(data) / 1024:.0f} KB)")
+            if not dry_run:
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
+            return
 
 
 def import_pictures(repo, page_sources, manifest, dry_run):
@@ -413,7 +491,7 @@ def import_pictures(repo, page_sources, manifest, dry_run):
         directory = repo / "assets" / "img" / name
         saved = []
         for number, run in enumerate(runs, start=1):
-            item = {"order": number, "id": "/".join(run["key"][:2]) + "." + run["key"][2]}
+            item = {"order": number, "id": "/".join(run["key"][:2]) + "." + run["key"][2], "jimdo_frame": jimdo_frame(run)}
             record["pictures"].append(item)
             existing = sorted(directory.glob(f"{number:02d}-{run['key'][1][:8]}.*")) if directory.exists() else []
             if existing:
@@ -676,6 +754,7 @@ def main():
     if "pictures" not in skip:
         log("\n3. Pictures")
         import_pictures(repo, page_sources, manifest, args.dry_run)
+        import_site_icon(repo, page_sources, manifest, args.dry_run)
     if "videos" not in skip:
         log("\n4. YouTube videos found on each page (for the open video slots)")
         list_videos(page_sources, manifest)
