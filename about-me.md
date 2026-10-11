@@ -5,14 +5,14 @@ permalink: /about-me/
 body_class: page-about
 ---
 
-![](IMPORT:about-me-01)
+![](/assets/img/about-me/01-32fb9152.jpg)
 
 ## Curriculum Vitae
 
 Download my short **2-page CV** and publication list **here**.<br>
-A longer, more **detailed CV** and publication list are [**here**.](https://storage.e.jimdo.com/file/e377d013-7ff2-4f37-a839-0a7c2dbce317/AGabriel_CV_Long_October_2026.pdf)
+A longer, more **detailed CV** and publication list are [**here**.](/assets/files/AGabriel_CV_Long_October_2026.pdf)
 
-![](IMPORT:about-me-02)
+![](/assets/img/about-me/02-e0881f29.jpg)
 
 ## About me
 
@@ -50,7 +50,7 @@ I conducted my PhD Studies at the Swiss Seismological Service at **ETH Zurich**,
 
 Previously, my field of research was theoretical material science. I worked on atomistic simulations of solid-phase epitaxial regrowth of amorphous germanium at the Institute of Ion Beam Physics and Materials Research at the Helmholtz Zentrum Dresden-Rossendorf, Germany, and was a student mentee at the Advanced Mask Technology Center (AMTC) Dresden.
 
-![](IMPORT:about-me-03)
+![](/assets/img/about-me/03-4a6afafe.jpg)
 
 ## Education
 
@@ -61,7 +61,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - 2004, **Vordiplom** (**BSc**), Physics, Technical University Dresden, Germany
 - 2002, Abitur (1.0), J.-A.-Hülße-Gymnasium Dresden
 
-![](IMPORT:about-me-04)
+![](/assets/img/about-me/04-cab9b863.jpg)
 
 ## Awards
 
@@ -86,7 +86,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - 2007, **ELISA Mentoring Scholarship**, TU Dresden Excellency of Women in Science Promotion Program
 - 2006, **DAAD Study Abroad Scholarship**, German Academic Exchange Service, University of Auckland, NZ
 
-![](IMPORT:about-me-05)
+![](/assets/img/about-me/05-b4b078f0.jpg)
 
 ## Service
 
@@ -97,7 +97,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - Subduction Zones in 4 Dimensions (**SZ4D**), 2022–now Science Steering Committee Member, Co-Chair **Modeling Collaboratory for Subduction**, 2022-25 Operations Planning Committee Member; 2020–22 Faulting and Earthquake Cycle Working Group member
 - Computational Infrastructure for Geodynamics (**CIG**), 2020–now, Executive Committee Member, 2021–23 Chair of EC
 
-![](IMPORT:about-me-06)
+![](/assets/img/about-me/06-edfb3017.jpg)
 
 ## Recent Invited Talks
 

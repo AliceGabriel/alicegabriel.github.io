@@ -1,48 +1,52 @@
-Import from https://www.alicegabriel.com, 2026-10-11 05:53 UTC, Python 3.12.3, on GitHub
+Import from https://www.alicegabriel.com, 2026-10-11 05:58 UTC, Python 3.12.3, on GitHub
 1. Saving a copy of each Jimdo page
     refused [python] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae26c63511a-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48ba190cd69d653-IAD; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [python, browser name] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae2ec52a1c9-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48ba1913864db71-IAD; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [curl] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae36e554cbd-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48ba1917dbfb086-IAD; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
     refused [curl, browser name] https://www.alicegabriel.com/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae43db6ad26-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  using the saved copy of / (119 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae43db6ad26-MSP; 
+            HTTP 403 (Server: cloudflare; cf-ray: a48ba1920d156cc7-IAD; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  using the saved copy of / (119 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48ba1920d156cc7-IAD; 
     refused [python] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae48d745114-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48ba1930bb72480-IAD; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [python, browser name] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b9ae50962a1fd-MSP; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48ba1938b7ff2a5-IAD; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
     refused [curl] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae56dc9ae26-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+            HTTP 403 (Server: cloudflare; cf-ray: a48ba19448c4b712-IAD; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
     refused [curl, browser name] https://www.alicegabriel.com/team/
-            HTTP 403 (Server: cloudflare; cf-ray: a48b9ae5fe8ffc89-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/team/: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae5fe8ffc89-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/publications/: HTTP 403 (Server: cloudflare; cf-ray: a48b9ae8dbc6ad1d-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/projects/: HTTP 403 (Server: cloudflare; cf-ray: a48b9aebdb87510d-MSP; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
-  could not read https://www.alicegabriel.com/about-me/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
-  could not read https://www.alicegabriel.com/in-the-media/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
-  could not read https://www.alicegabriel.com/codes-and-hpc-training/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
-  could not read https://www.alicegabriel.com/teaching/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
+            HTTP 403 (Server: cloudflare; cf-ray: a48ba195ac33317e-IAD; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  using the saved copy of /team/ (85 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48ba195ac33317e-IAD; 
+  using the saved copy of /publications/ (211 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48ba1994acaca2b-IAD; 
+  using the saved copy of /projects/ (77 KB); the site did not answer from here: HTTP 403 (Server: cloudflare; cf-ray: a48ba19ade75e10e-IAD; 
+  using the saved copy of /about-me/ (87 KB); the site did not answer from here: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row
+  using the saved copy of /in-the-media/ (53 KB); the site did not answer from here: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row
+  using the saved copy of /codes-and-hpc-training/ (31 KB); the site did not answer from here: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row
+  using the saved copy of /teaching/ (60 KB); the site did not answer from here: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row
 
 2. PDFs and other files
-  FAILED  https://storage.e.jimdo.com/file/deddef62-387f-4716-b801-52bb6a6900b9/AGabriel_CV_Short_July_2026.pdf
-          HTTP 404 (Server: cloudflare; cf-ray: a48b9aec9de8a203-MSP; page says: Not Found Not Found The requested resource was not found on this server.)
+  ok    0.4 MB  /assets/files/AGabriel_CV_Long_October_2026.pdf
   total 441 MB
 
 3. Pictures
-  home                     18 pictures downloaded and placed
-  site icon saved as /assets/img/site-icon.png (17 KB)
+  home                     18 of 18 pictures downloaded (the new page has no open slots)
+  team                      4 pictures downloaded and placed
+  publications              1 pictures downloaded and placed
+  projects                 17 pictures downloaded and placed
+  about-me                  6 pictures downloaded and placed
+  in-the-media              1 pictures downloaded and placed
 
 4. YouTube videos found on each page (for the open video slots)
   home                     JvMuQN4FuvU, JpwcWkPuc9A, HUJCktfPqXk, KMirUfgbEv0
+  publications             JvMuQN4FuvU
+  about-me                 mAmuAXmeHHM, N80BIv5SoPY
+  in-the-media             gAUaCm1mVA0, PBczPAzr2Rk, nFdRdbmLHHM, JpwcWkPuc9A, TAue0hEGD-k
 
 5. Comparing the text of the old and new pages
-  0 difference(s) in text or link targets. Details: tools/jimdo-snapshot/text-check.txt
+  10 difference(s) in text or link targets. Details: tools/jimdo-snapshot/text-check.txt
 
 Done.
-  files copied:   35 of 36
-  pictures:       home 18
-  1 file(s) could not be copied. Their links still point at Jimdo.
-  open slots left: 31 (IMPORT:about-me-01, IMPORT:about-me-02, IMPORT:about-me-03, IMPORT:about-me-04, IMPORT:about-me-05, IMPORT:about-me-06, IMPORT:in-the-media-01, IMPORT:in-the-media-video-2 ...)
+  files copied:   36 of 36
+  pictures:       home 18, team 4, publications 1, projects 17, about-me 6, in-the-media 1
   A full record is in tools/jimdo-snapshot/manifest.json

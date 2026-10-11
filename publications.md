@@ -10,7 +10,7 @@ body_class: page-publications
 # Two asterisks on each side make bold (your name, the title). One on each side makes italics (the journal).
 ---
 
-![](IMPORT:publications-01)
+![](/assets/img/publications/01-123795bf.webp)
 
 [Explore our group's work on Google Scholar](https://scholar.google.de/citations?hl=en&user=FmMjT24AAAAJ)
 

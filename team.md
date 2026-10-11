@@ -7,13 +7,13 @@ description: "Our group’s research bridges space-time scales as well as discip
 
 # Group photos shown at the top of the page (this replaces the Jimdo slide show).
 photos:
-  - src: "IMPORT:team-01"
+  - src: "/assets/img/team/01-e25ad72e.jpg"
     caption: "Group meeting, SIO, April 2025"
-  - src: "IMPORT:team-02"
+  - src: "/assets/img/team/02-4d926a38.jpg"
     caption: "Group meeting, Munich, February 2025"
-  - src: "IMPORT:team-03"
+  - src: "/assets/img/team/03-caf4d268.jpg"
     caption: "Group meeting, San Diego, February 2025"
-  - src: "IMPORT:team-04"
+  - src: "/assets/img/team/04-5ea2ac5e.jpg"
     caption: "ChEESE meeting with TUM collaborators, Iceland, September 2024"
 ---
 

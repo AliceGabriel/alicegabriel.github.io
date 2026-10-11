@@ -272,11 +272,13 @@
       "to": "/assets/papers/seissol_mtmlda.pdf"
     },
     {
-      "from": "https://storage.e.jimdo.com/file/deddef62-387f-4716-b801-52bb6a6900b9/AGabriel_CV_Short_July_2026.pdf",
+      "from": "https://storage.e.jimdo.com/file/e377d013-7ff2-4f37-a839-0a7c2dbce317/AGabriel_CV_Long_October_2026.pdf",
       "linked_in": [
         "about-me.md"
       ],
-      "status": "failed: HTTP 404 (Server: cloudflare; cf-ray: a48b9aec9de8a203-MSP; page says: Not Found Not Found The requested resource was not found on this server.)"
+      "bytes": 413663,
+      "status": "ok",
+      "to": "/assets/files/AGabriel_CV_Long_October_2026.pdf"
     },
     {
       "from": "https://storage.e.jimdo.com/file/e43d66e8-a856-4578-aef9-6e53e98ae07b/997517_0_merged_1717162199.pdf",
@@ -327,7 +329,7 @@
   "pictures": [
     {
       "page": "home",
-      "slots_in_new_page": 18,
+      "slots_in_new_page": 0,
       "pictures_on_jimdo_page": 18,
       "pictures": [
         {
@@ -338,10 +340,8 @@
             "width": "1920",
             "height": "1080"
           },
-          "status": "ok",
-          "to": "/assets/img/home/01-8fcb0f18.jpg",
-          "bytes": 131816,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/450064724/8fcb0f18-947b-4fe7-9406-382d632d0e8d.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/01-8fcb0f18.jpg"
         },
         {
           "order": 2,
@@ -352,10 +352,8 @@
             "width": "1440",
             "height": "1080"
           },
-          "status": "ok",
-          "to": "/assets/img/home/02-8ee7da44.png",
-          "bytes": 122555,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552679490/8ee7da44-5cd7-4515-aae4-26f2891e39f1.png"
+          "status": "already there",
+          "to": "/assets/img/home/02-8ee7da44.png"
         },
         {
           "order": 3,
@@ -366,10 +364,8 @@
             "width": "1920",
             "height": "1440"
           },
-          "status": "ok",
-          "to": "/assets/img/home/03-6741e60a.jpg",
-          "bytes": 288604,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552357641/6741e60a-5f4a-4917-b6bf-b7e320ecd4d8.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/03-6741e60a.jpg"
         },
         {
           "order": 4,
@@ -380,10 +376,8 @@
             "width": "1024",
             "height": "768"
           },
-          "status": "ok",
-          "to": "/assets/img/home/04-7e6e08b3.jpg",
-          "bytes": 124210,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552590267/7e6e08b3-e5e5-4705-9746-520fd13de3c7.webp"
+          "status": "already there",
+          "to": "/assets/img/home/04-7e6e08b3.jpg"
         },
         {
           "order": 5,
@@ -394,10 +388,8 @@
             "width": "1024",
             "height": "768"
           },
-          "status": "ok",
-          "to": "/assets/img/home/05-b6077a59.png",
-          "bytes": 176650,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/552759994/b6077a59-9de6-4428-93e7-f94fb2e863b2.png"
+          "status": "already there",
+          "to": "/assets/img/home/05-b6077a59.png"
         },
         {
           "order": 6,
@@ -408,10 +400,8 @@
             "width": "2560",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/home/06-6a724790.jpg",
-          "bytes": 543722,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/548725688/6a724790-b4b2-479a-a7d5-055d2b1a17c9.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/06-6a724790.jpg"
         },
         {
           "order": 7,
@@ -422,10 +412,8 @@
             "width": "1024",
             "height": "768"
           },
-          "status": "ok",
-          "to": "/assets/img/home/07-39c20f33.png",
-          "bytes": 125050,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/542727905/39c20f33-5738-4b69-b486-b1180837c414.png"
+          "status": "already there",
+          "to": "/assets/img/home/07-39c20f33.png"
         },
         {
           "order": 8,
@@ -436,10 +424,8 @@
             "width": "1440",
             "height": "1080"
           },
-          "status": "ok",
-          "to": "/assets/img/home/08-dc03ff09.jpg",
-          "bytes": 117134,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535258312/dc03ff09-773f-4acf-a087-9c7e769a7d3f.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/08-dc03ff09.jpg"
         },
         {
           "order": 9,
@@ -450,10 +436,8 @@
             "width": "1024",
             "height": "1200"
           },
-          "status": "ok",
-          "to": "/assets/img/home/09-3c5cc101.jpg",
-          "bytes": 252442,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535169095/3c5cc101-5cc8-4cb4-94dc-060343495b65.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/09-3c5cc101.jpg"
         },
         {
           "order": 10,
@@ -464,10 +448,8 @@
             "width": "1920",
             "height": "1440"
           },
-          "status": "ok",
-          "to": "/assets/img/home/10-3edd4c1f.jpg",
-          "bytes": 390338,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535168036/3edd4c1f-2d24-40f1-b138-a4fa36580a43.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/10-3edd4c1f.jpg"
         },
         {
           "order": 11,
@@ -478,10 +460,8 @@
             "width": "1920",
             "height": "1440"
           },
-          "status": "ok",
-          "to": "/assets/img/home/11-d858be82.jpg",
-          "bytes": 374740,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/535081156/d858be82-2ce9-43ea-8946-da7f7afb859f.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/11-d858be82.jpg"
         },
         {
           "order": 12,
@@ -492,10 +472,8 @@
             "width": "640",
             "height": "480"
           },
-          "status": "ok",
-          "to": "/assets/img/home/12-2429cc67.png",
-          "bytes": 371000,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/531692167/2429cc67-54bd-41d9-9032-228e501855ae.png"
+          "status": "already there",
+          "to": "/assets/img/home/12-2429cc67.png"
         },
         {
           "order": 13,
@@ -506,10 +484,8 @@
             "width": "2560",
             "height": "1920"
           },
-          "status": "ok",
-          "to": "/assets/img/home/13-b5040b92.jpg",
-          "bytes": 292714,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/531671761/b5040b92-5bc2-4f56-83d6-cbb98eef47b6.png"
+          "status": "already there",
+          "to": "/assets/img/home/13-b5040b92.jpg"
         },
         {
           "order": 14,
@@ -520,10 +496,8 @@
             "width": "1024",
             "height": "768"
           },
-          "status": "ok",
-          "to": "/assets/img/home/14-384a03d9.jpg",
-          "bytes": 177048,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/517985859/384a03d9-a3c1-4a82-ae80-9e19a57802e2.jpg"
+          "status": "already there",
+          "to": "/assets/img/home/14-384a03d9.jpg"
         },
         {
           "order": 15,
@@ -534,10 +508,8 @@
             "width": "1280",
             "height": "960"
           },
-          "status": "ok",
-          "to": "/assets/img/home/15-2f9d4423.png",
-          "bytes": 406446,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/488921397/2f9d4423-fc47-4ae2-be74-8b90794aa725.png"
+          "status": "already there",
+          "to": "/assets/img/home/15-2f9d4423.png"
         },
         {
           "order": 16,
@@ -548,10 +520,8 @@
             "width": "1024",
             "height": "768"
           },
-          "status": "ok",
-          "to": "/assets/img/home/16-9f25aea5.webp",
-          "bytes": 288508,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=88,format=webp,fit=scale-down,width=1600,height=1600/image/471711622/9f25aea5-77a1-4184-a79f-f54799b46bb5.png"
+          "status": "already there",
+          "to": "/assets/img/home/16-9f25aea5.webp"
         },
         {
           "order": 17,
@@ -562,10 +532,8 @@
             "width": "800",
             "height": "600"
           },
-          "status": "ok",
-          "to": "/assets/img/home/17-ede5c959.jpg",
-          "bytes": 141992,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/453531226/ede5c959-ea0d-4c43-931e-20cc8d59a7a4.webp"
+          "status": "already there",
+          "to": "/assets/img/home/17-ede5c959.jpg"
         },
         {
           "order": 18,
@@ -576,13 +544,468 @@
             "width": "800",
             "height": "600"
           },
+          "status": "already there",
+          "to": "/assets/img/home/18-6c5c79e7.jpg"
+        }
+      ],
+      "placed": false
+    },
+    {
+      "page": "team",
+      "slots_in_new_page": 4,
+      "pictures_on_jimdo_page": 4,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "511111679/e25ad72e-cc0e-4ef7-bfaa-77a67a355df6.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "1920"
+          },
           "status": "ok",
-          "to": "/assets/img/home/18-6c5c79e7.jpg",
-          "bytes": 207061,
-          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/457508370/6c5c79e7-0bfe-4f60-b973-d5abc6010ace.png"
+          "to": "/assets/img/team/01-e25ad72e.jpg",
+          "bytes": 423507,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511111679/e25ad72e-cc0e-4ef7-bfaa-77a67a355df6.jpg"
+        },
+        {
+          "order": 2,
+          "id": "511112937/4d926a38-8574-4562-923b-1605d24345e0.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "2360"
+          },
+          "status": "ok",
+          "to": "/assets/img/team/02-4d926a38.jpg",
+          "bytes": 428299,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511112937/4d926a38-8574-4562-923b-1605d24345e0.jpg"
+        },
+        {
+          "order": 3,
+          "id": "511112669/caf4d268-1f02-44f9-b806-e3d05ed316f8.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "1920"
+          },
+          "status": "ok",
+          "to": "/assets/img/team/03-caf4d268.jpg",
+          "bytes": 377744,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511112669/caf4d268-1f02-44f9-b806-e3d05ed316f8.jpg"
+        },
+        {
+          "order": 4,
+          "id": "511505896/5ea2ac5e-b815-4886-b4f4-ad3ecd6087f0.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "2560",
+            "height": "1920"
+          },
+          "status": "ok",
+          "to": "/assets/img/team/04-5ea2ac5e.jpg",
+          "bytes": 309907,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/511505896/5ea2ac5e-b815-4886-b4f4-ad3ecd6087f0.jpg"
         }
       ],
       "placed": true
+    },
+    {
+      "page": "publications",
+      "slots_in_new_page": 1,
+      "pictures_on_jimdo_page": 1,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "511111258/123795bf-cbc7-4e4c-8fe3-e63eabc311a7.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "width": "1600",
+            "height": "1213"
+          },
+          "status": "ok",
+          "to": "/assets/img/publications/01-123795bf.webp",
+          "bytes": 161160,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=88,format=webp,fit=scale-down,width=1600,height=1600/image/511111258/123795bf-cbc7-4e4c-8fe3-e63eabc311a7.png"
+        }
+      ],
+      "placed": true
+    },
+    {
+      "page": "projects",
+      "slots_in_new_page": 17,
+      "pictures_on_jimdo_page": 17,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "514276598/1057a31b-adcf-4283-9ef4-bb71adc307f0.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;460;0;461",
+            "width": "800",
+            "height": "800"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/01-1057a31b.jpg",
+          "bytes": 214060,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514276598/1057a31b-adcf-4283-9ef4-bb71adc307f0.png"
+        },
+        {
+          "order": 2,
+          "id": "514285966/f4e62320-f04d-43d9-9df5-859dd45e5feb.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;745;0;745",
+            "width": "320",
+            "height": "320"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/02-f4e62320.jpg",
+          "bytes": 134743,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514285966/f4e62320-f04d-43d9-9df5-859dd45e5feb.jpg"
+        },
+        {
+          "order": 3,
+          "id": "514276924/993a031d-1d12-4256-a68e-4222cc55d882.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;77;0;77",
+            "width": "480",
+            "height": "480"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/03-993a031d.png",
+          "bytes": 139812,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514276924/993a031d-1d12-4256-a68e-4222cc55d882.png"
+        },
+        {
+          "order": 4,
+          "id": "514277595/32c4a611-7403-4e07-a502-53b6d7c06cca.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "78;0;77;0",
+            "width": "1024",
+            "height": "1024"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/04-32c4a611.png",
+          "bytes": 44962,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514277595/32c4a611-7403-4e07-a502-53b6d7c06cca.png"
+        },
+        {
+          "order": 5,
+          "id": "514277889/ed30611b-4f2c-4c85-8f29-755d10d05508.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "6;0;5;0",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/05-ed30611b.png",
+          "bytes": 10312,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514277889/ed30611b-4f2c-4c85-8f29-755d10d05508.png"
+        },
+        {
+          "order": 6,
+          "id": "514858736/86e69b37-6702-4847-a0e9-7fd7018fbe3a.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;2;0;2",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/06-86e69b37.png",
+          "bytes": 7769,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514858736/86e69b37-6702-4847-a0e9-7fd7018fbe3a.png"
+        },
+        {
+          "order": 7,
+          "id": "514278403/ec51a9db-ecdb-414f-874c-ccbd663529df.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;805;0;806",
+            "width": "1280",
+            "height": "1280"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/07-ec51a9db.png",
+          "bytes": 39599,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514278403/ec51a9db-ecdb-414f-874c-ccbd663529df.png"
+        },
+        {
+          "order": 8,
+          "id": "514293534/14549c81-77ef-4ae8-ae0b-1c8cf424fae7.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;1050;0;1050",
+            "width": "320",
+            "height": "320"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/08-14549c81.png",
+          "bytes": 17347,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514293534/14549c81-77ef-4ae8-ae0b-1c8cf424fae7.png"
+        },
+        {
+          "order": 9,
+          "id": "514278636/05be68b5-72b4-4c11-aa38-86e073c181f6.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;1036;0;1037",
+            "width": "1024",
+            "height": "1024"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/09-05be68b5.jpg",
+          "bytes": 57913,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514278636/05be68b5-72b4-4c11-aa38-86e073c181f6.jpg"
+        },
+        {
+          "order": 10,
+          "id": "514279418/2d9d4f34-51fd-477e-8e91-6699b82ae50f.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/10-2d9d4f34.png",
+          "bytes": 4281,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514279418/2d9d4f34-51fd-477e-8e91-6699b82ae50f.png"
+        },
+        {
+          "order": 11,
+          "id": "514279786/638a208a-771e-4493-953e-b6365bde5748.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "1024",
+            "height": "1024"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/11-638a208a.png",
+          "bytes": 24794,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514279786/638a208a-771e-4493-953e-b6365bde5748.png"
+        },
+        {
+          "order": 12,
+          "id": "514290717/804acf82-a1c4-443f-9d49-85451cc33466.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;139;0;140",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/12-804acf82.png",
+          "bytes": 5540,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514290717/804acf82-a1c4-443f-9d49-85451cc33466.png"
+        },
+        {
+          "order": 13,
+          "id": "514291075/f937e1e0-8a6f-4b1f-a4e4-731df2ebdb2b.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "85;0;84;0",
+            "width": "1024",
+            "height": "1024"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/13-f937e1e0.png",
+          "bytes": 44900,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514291075/f937e1e0-8a6f-4b1f-a4e4-731df2ebdb2b.png"
+        },
+        {
+          "order": 14,
+          "id": "514292409/caf041ef-2a72-4feb-b7c6-bc971376a0c1.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;119;0;119",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/14-caf041ef.png",
+          "bytes": 38510,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514292409/caf041ef-2a72-4feb-b7c6-bc971376a0c1.png"
+        },
+        {
+          "order": 15,
+          "id": "514300792/aad825d6-fd89-43a8-a9df-6b4940a2b8ee.webp",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;137;0;138",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/15-aad825d6.jpg",
+          "bytes": 18338,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514300792/aad825d6-fd89-43a8-a9df-6b4940a2b8ee.webp"
+        },
+        {
+          "order": 16,
+          "id": "514301323/805a3a6d-625f-4673-b76d-6411224bdd17.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;10;0;10",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/16-805a3a6d.png",
+          "bytes": 3203,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514301323/805a3a6d-625f-4673-b76d-6411224bdd17.png"
+        },
+        {
+          "order": 17,
+          "id": "514304064/84e5ce58-33f3-476f-a25b-ea5992c6883f.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "3;0;3;0",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/projects/17-84e5ce58.jpg",
+          "bytes": 38726,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/514304064/84e5ce58-33f3-476f-a25b-ea5992c6883f.png"
+        }
+      ],
+      "placed": true
+    },
+    {
+      "page": "about-me",
+      "slots_in_new_page": 6,
+      "pictures_on_jimdo_page": 6,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "437967010/32fb9152-4fef-452f-9832-dcf52318a810.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;343;0",
+            "width": "800",
+            "height": "800"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/01-32fb9152.jpg",
+          "bytes": 107146,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/437967010/32fb9152-4fef-452f-9832-dcf52318a810.jpg"
+        },
+        {
+          "order": 2,
+          "id": "457508466/e0881f29-ee3a-4022-aab7-79d53d0aa4da.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "714;0;714;0",
+            "width": "2560",
+            "height": "2560"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/02-e0881f29.jpg",
+          "bytes": 422696,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/457508466/e0881f29-ee3a-4022-aab7-79d53d0aa4da.jpg"
+        },
+        {
+          "order": 3,
+          "id": "449778812/4a6afafe-46ad-4431-b85b-5dda286200f1.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "270;0;571;0",
+            "width": "1920",
+            "height": "1920"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/03-4a6afafe.jpg",
+          "bytes": 382443,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/449778812/4a6afafe-46ad-4431-b85b-5dda286200f1.jpg"
+        },
+        {
+          "order": 4,
+          "id": "449113249/cab9b863-0752-4ace-88ea-892c9960ad82.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "59;0;59;0",
+            "width": "2560",
+            "height": "2560"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/04-cab9b863.jpg",
+          "bytes": 461045,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/449113249/cab9b863-0752-4ace-88ea-892c9960ad82.jpg"
+        },
+        {
+          "order": 5,
+          "id": "522628005/b4b078f0-c5df-4dcc-ae36-b5f9de51a245.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "258;0;258;0",
+            "width": "1440",
+            "height": "1440"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/05-b4b078f0.jpg",
+          "bytes": 432053,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/522628005/b4b078f0-c5df-4dcc-ae36-b5f9de51a245.jpg"
+        },
+        {
+          "order": 6,
+          "id": "470374503/edfb3017-7606-4d46-b3dd-e74fb004829e.jpg",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;0;0;0",
+            "width": "320",
+            "height": "320"
+          },
+          "status": "ok",
+          "to": "/assets/img/about-me/06-edfb3017.jpg",
+          "bytes": 25340,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/470374503/edfb3017-7606-4d46-b3dd-e74fb004829e.jpg"
+        }
+      ],
+      "placed": true
+    },
+    {
+      "page": "in-the-media",
+      "slots_in_new_page": 1,
+      "pictures_on_jimdo_page": 1,
+      "pictures": [
+        {
+          "order": 1,
+          "id": "522627805/dc9d2545-76aa-4cb0-8f5d-39a17a740bd5.png",
+          "jimdo_frame": {
+            "fit": "scale-down",
+            "trim": "0;630;0;630",
+            "width": "160",
+            "height": "160"
+          },
+          "status": "ok",
+          "to": "/assets/img/in-the-media/01-dc9d2545.png",
+          "bytes": 33119,
+          "fetched": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,width=1600,height=1600/image/522627805/dc9d2545-76aa-4cb0-8f5d-39a17a740bd5.png"
+        }
+      ],
+      "placed": true
+    },
+    {
+      "page": "codes-and-hpc-training",
+      "slots_in_new_page": 0,
+      "pictures_on_jimdo_page": 0,
+      "pictures": []
+    },
+    {
+      "page": "teaching",
+      "slots_in_new_page": 0,
+      "pictures_on_jimdo_page": 0,
+      "pictures": []
     }
   ],
   "videos": [
@@ -606,13 +1029,74 @@
           "near": "/div> GRL paper on the 2024 New Year Noto Peninsula, Japan, earthquake and tsunami \"Rapid earthquake-tsunami modeling: The multi-event, m"
         }
       ]
+    },
+    {
+      "page": "team",
+      "videos": []
+    },
+    {
+      "page": "publications",
+      "videos": [
+        {
+          "id": "JvMuQN4FuvU",
+          "near": "3.supercomputing.org/proceedings/sci_viz/sci_viz_files/svs102s3-file1.pdf\" target=\"_blank\"> pdf ] , [download video] , [YouTube] 2022, A.-A. Gabriel, “Computational Earthquake Physics (Computergestutzte Erdbebenphysik)”,"
+        }
+      ]
+    },
+    {
+      "page": "projects",
+      "videos": []
+    },
+    {
+      "page": "about-me",
+      "videos": [
+        {
+          "id": "mAmuAXmeHHM",
+          "near": "/li> 11/2024, TREAD /Earthquake Physics & Induced Seismicity ( EPIS ) workshop and conference, Lunteren, Netherlands 11/2024, Curiosity Ignited , UCSD, link to recording 09/2024 GFZ Potsdam , Germany, GeoInquire Workshop"
+        },
+        {
+          "id": "N80BIv5SoPY",
+          "near": "cience Workshop 2022 12/2022 Leopoldina German National Academy of Sciences, Invited Plenary Panelist “Symposium Earth System Sciences” 12/2022 ERC TECTONIC-FEAR Seminar on Earthquake Physics, link to recording 11/2022, "
+        }
+      ]
+    },
+    {
+      "page": "in-the-media",
+      "videos": [
+        {
+          "id": "gAUaCm1mVA0",
+          "near": "AmXH TZFtb\"> How the tsunami impacted San Diego Coast - Fox 5 TV interview , July 30, 2025: <a href=\"https://fox5sandiego.com/news/local-news"
+        },
+        {
+          "id": "PBczPAzr2Rk",
+          "near": "AmXH TZFtb\"> How to prepare for the next earthquake in San Diego - KBPS radio interview , April 15, 2025:<a href=\"https://www.kpbs.org/po"
+        },
+        {
+          "id": "nFdRdbmLHHM",
+          "near": "AmXH TZFtb\"> On the M5.2 Julian earthquake - Fox 5 TV interview, April 15, 2025: <a href=\"https://fox5sandiego.com/news/earthquakes/prelimin"
+        },
+        {
+          "id": "JpwcWkPuc9A",
+          "near": "AmXH TZFtb\"> A SCIENTIST'S LIFE: ALICE GABRIEL. Seismologist uses supercomputing to break down complexity of earthquakes -"
+        },
+        {
+          "id": "TAue0hEGD-k",
+          "near": "AmXH TZFtb\"> ChEESE: Using the power of exascale simulations to save lives - openly shared/reusable video explaining how exascale comput"
+        }
+      ]
+    },
+    {
+      "page": "codes-and-hpc-training",
+      "videos": []
+    },
+    {
+      "page": "teaching",
+      "videos": []
     }
   ],
-  "files_total_bytes": 440862348,
+  "files_total_bytes": 441276011,
   "site_icon": {
-    "status": "ok",
-    "to": "/assets/img/site-icon.png",
-    "from": "https://storage.e.jimdo.com/cdn-cgi/image/quality=90,fit=cover,width=192,height=192/image/433567170/5c7c6a1f-7f20-4309-bf61-df74d1762296.png",
-    "bytes": 16995
+    "status": "already there",
+    "to": "/assets/img/site-icon.png"
   }
 }

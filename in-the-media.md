@@ -35,7 +35,7 @@ grid_class: media
 
 ***
 
-![](IMPORT:in-the-media-01)
+![](/assets/img/in-the-media/01-dc9d2545.png)
 
 “**Where will the next ‘big one’ be in California? Seismologists name faults of top concern**“ by Danielle Dawson – FOX5 San Diego <https://fox5sandiego.com/news/earthquakes/where-will-the-next-big-one-be-in-california-seismologists-name-faults-of-top-concern/>
 
