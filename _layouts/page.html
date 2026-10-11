@@ -11,7 +11,8 @@ layout: default
   <div class="gallery">
     {%- for photo in page.photos %}
     <figure>
-      {% include picture.html src=photo.src alt=photo.caption %}
+      {%- assign photo_alt = photo.alt | default: photo.caption -%}
+      {% include picture.html src=photo.src alt=photo_alt %}
       {%- if photo.caption %}
       <figcaption>{{ photo.caption }}</figcaption>
       {%- endif %}

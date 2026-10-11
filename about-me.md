@@ -5,14 +5,14 @@ permalink: /about-me/
 body_class: page-about
 ---
 
-![](/assets/img/about-me/01-32fb9152.jpg)
+![Portrait photo](/assets/img/about-me/01-32fb9152.jpg)
 
 ## Curriculum Vitae
 
 Download my short **2-page CV** and publication list **here**.<br>
 A longer, more **detailed CV** and publication list are [**here**.](/assets/files/AGabriel_CV_Long_October_2026.pdf)
 
-![](/assets/img/about-me/02-e0881f29.jpg)
+![At the AGU Honors ceremony, in front of the AGU Honors backdrop](/assets/img/about-me/02-e0881f29.jpg)
 
 ## About me
 
@@ -50,7 +50,7 @@ I conducted my PhD Studies at the Swiss Seismological Service at **ETH Zurich**,
 
 Previously, my field of research was theoretical material science. I worked on atomistic simulations of solid-phase epitaxial regrowth of amorphous germanium at the Institute of Ion Beam Physics and Materials Research at the Helmholtz Zentrum Dresden-Rossendorf, Germany, and was a student mentee at the Advanced Mask Technology Center (AMTC) Dresden.
 
-![](/assets/img/about-me/03-4a6afafe.jpg)
+![In the field: crouching next to a fault surface in limestone, wearing an orange safety vest](/assets/img/about-me/03-4a6afafe.jpg)
 
 ## Education
 
@@ -61,7 +61,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - 2004, **Vordiplom** (**BSc**), Physics, Technical University Dresden, Germany
 - 2002, Abitur (1.0), J.-A.-Hülße-Gymnasium Dresden
 
-![](/assets/img/about-me/04-cab9b863.jpg)
+![Holding the certificate and trophy of the PRACE Ada Lovelace Award for HPC](/assets/img/about-me/04-cab9b863.jpg)
 
 ## Awards
 
@@ -86,7 +86,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - 2007, **ELISA Mentoring Scholarship**, TU Dresden Excellency of Women in Science Promotion Program
 - 2006, **DAAD Study Abroad Scholarship**, German Academic Exchange Service, University of Auckland, NZ
 
-![](/assets/img/about-me/05-b4b078f0.jpg)
+![In the field: leaning against a steep rock face](/assets/img/about-me/05-b4b078f0.jpg)
 
 ## Service
 
@@ -97,7 +97,7 @@ Previously, my field of research was theoretical material science. I worked on a
 - Subduction Zones in 4 Dimensions (**SZ4D**), 2022–now Science Steering Committee Member, Co-Chair **Modeling Collaboratory for Subduction**, 2022-25 Operations Planning Committee Member; 2020–22 Faulting and Earthquake Cycle Working Group member
 - Computational Infrastructure for Geodynamics (**CIG**), 2020–now, Executive Committee Member, 2021–23 Chair of EC
 
-![](/assets/img/about-me/06-edfb3017.jpg)
+![Portrait photo, close-up](/assets/img/about-me/06-edfb3017.jpg)
 
 ## Recent Invited Talks
 

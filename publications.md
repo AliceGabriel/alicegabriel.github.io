@@ -10,7 +10,7 @@ body_class: page-publications
 # Two asterisks on each side make bold (your name, the title). One on each side makes italics (the journal).
 ---
 
-![](/assets/img/publications/01-123795bf.webp)
+![Visualization of a 3D earthquake simulation: seismic waves below a block of topography](/assets/img/publications/01-123795bf.webp)
 
 [Explore our group's work on Google Scholar](https://scholar.google.de/citations?hl=en&user=FmMjT24AAAAJ)
 

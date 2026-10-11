@@ -37,13 +37,13 @@ I am the recipient of a AGU Macelwane Award and an AGU Fellow, a current Thomas 
 
 [Read More](/about-me/)
 
-![](/assets/img/home/01-8fcb0f18.jpg)
+![Rendering of a three-dimensional earthquake simulation: grey fault surfaces in front of orange and red wave patterns](/assets/img/home/01-8fcb0f18.jpg)
 
 <!-- news -->
 
 ## News
 
-![](/assets/img/home/02-8ee7da44.png)
+![Architecture diagram of the CRESCENT code verification platform on cloud services](/assets/img/home/02-8ee7da44.png)
 
 ### New *Seismica* Paper:
 
@@ -53,7 +53,7 @@ New software report co-led by PhD student [Fabian Kutschera](https://fabian-kuts
 
 ***
 
-![](/assets/img/home/03-6741e60a.jpg)
+![Figure from the paper: fault segments of the Mt Vettore and Mt Bove fault system on a relief map, with plots of vertical offset along strike](/assets/img/home/03-6741e60a.jpg)
 
 ### New *JGR* Paper:
 
@@ -63,7 +63,7 @@ New paper led by PostDoc [Mathilde Marchandon](https://mathildemarchandon.wixsit
 
 ***
 
-![](/assets/img/home/04-7e6e08b3.jpg)
+![Workflow diagram coupling the MOOSE and SeisSol codes through format conversion](/assets/img/home/04-7e6e08b3.jpg)
 
 ### New *RMRE* Paper:
 
@@ -73,7 +73,7 @@ New paper led by KIT PhD student Rahim Habibi and PostDoc [Thomas Ulrich](https:
 
 ***
 
-![](/assets/img/home/05-b6077a59.png)
+![Figure from the paper: cross-sections of the mean and standard deviation of fault slip, and a slip profile with depth](/assets/img/home/05-b6077a59.png)
 
 ### New *EPSL* Paper:
 
@@ -83,7 +83,7 @@ New paper led by PhD student [Zihua Niu](https://aangniu.github.io/) with Nico S
 
 ***
 
-![](/assets/img/home/06-6a724790.jpg)
+![Group photo after the PhD defense: five people standing in a wood-panelled room](/assets/img/home/06-6a724790.jpg)
 
 ### Congrats, Dr. Rekoske!
 
@@ -91,7 +91,7 @@ Huge congratulations to **John Rekoske** on successfully defending his PhD! This
 
 ***
 
-![](/assets/img/home/07-39c20f33.png)
+![Announcement of the Joint SeisSol and ExaHyPE User Workshop, Training and Hackathon, with the logos of both codes](/assets/img/home/07-39c20f33.png)
 
 ### SeisSol and ExaHyPE Workshop
 
@@ -99,7 +99,7 @@ I can hardly believe it has been 20 years of **SeisSol** and 10 years of **ExaHy
 
 ***
 
-![](/assets/img/home/08-dc03ff09.jpg)
+![Group photo after the PhD defense: five people in a lecture hall, remote participants on the screen behind them](/assets/img/home/08-dc03ff09.jpg)
 
 ### Congrats, Dr. Wirp!
 
@@ -107,7 +107,7 @@ Big, big congratulations to Dr. [**Sara Aniko Wirp**](https://www.geophysik.uni-
 
 ***
 
-![](/assets/img/home/09-3c5cc101.jpg)
+![Holding the ACM Gordon Bell Prize certificate in front of an SC25 backdrop](/assets/img/home/09-3c5cc101.jpg)
 
 ### ACM Gordon Bell Prize
 
@@ -115,7 +115,7 @@ We were awarded the "Nobel Prize" of Supercomputing, the [**Association for Comp
 
 ***
 
-![](/assets/img/home/10-3edd4c1f.jpg)
+![Six people on a stage, three of them holding award certificates](/assets/img/home/10-3edd4c1f.jpg)
 
 ### Hyperion Award for "Best Use of HPC in Physical Sciences"
 
@@ -123,7 +123,7 @@ Thank you [**Hyperion Research**](https://hyperionresearch.com/) for awarding us
 
 ***
 
-![](/assets/img/home/11-d858be82.jpg)
+![Group of eight at the Department of Energy booth at SC25, one holding the award plaque](/assets/img/home/11-d858be82.jpg)
 
 ### HPCwire Reader's Choice Award for "Best Use of HPC in Physical Sciences"
 
@@ -131,7 +131,7 @@ Thank you to the [**HPCwire**](http://www.hpcwire.com/) readers for the “[**Be
 
 ***
 
-![](/assets/img/home/12-2429cc67.png)
+![Two researchers next to a sign for the session rooms of the slow-to-fast earthquakes workshop](/assets/img/home/12-2429cc67.png)
 
 ### In the SSA News!
 
@@ -139,7 +139,7 @@ Thank you to the [**HPCwire**](http://www.hpcwire.com/) readers for the “[**Be
 
 ***
 
-![](/assets/img/home/13-b5040b92.jpg)
+![Talk at the CRESCENT annual meeting, with a slide titled Rupture Rhapsody: Splay and Partial Rupture Dynamics in Cascadia](/assets/img/home/13-b5040b92.jpg)
 
 ### CRESCENT Annual Meeting
 
@@ -147,7 +147,7 @@ Inspiring subduction science in Seattle, and great to present new dynamic ruptur
 
 ***
 
-![](/assets/img/home/14-384a03d9.jpg)
+![Three people standing together after the PhD defenses](/assets/img/home/14-384a03d9.jpg)
 
 ### Congrats, Dr. Niu and Dr. Schliwa!
 
@@ -159,7 +159,7 @@ Congrats Dr. Niu and Dr. Schliwa!
 
 ***
 
-![](/assets/img/home/15-2f9d4423.png)
+![Title slide of the Tandem Developer's Hackathon with participant names, a photo of the group at work and simulation figures](/assets/img/home/15-2f9d4423.png)
 
 ### Tandem Hackathon
 
@@ -167,7 +167,7 @@ Our first Tandem Developer's Hackathon has concluded successfully. Thanks to all
 
 ***
 
-![](/assets/img/home/16-9f25aea5.webp)
+![Illustration: a desert rock landscape above three layers of yellow ellipses that stand for earthquakes of different sizes](/assets/img/home/16-9f25aea5.webp)
 
 ### Science paper - Small and Large Earthquakes Don't Play By the Same Rules
 
@@ -187,7 +187,7 @@ Free-to-read link to the paper at: [https://science.org/stoken/author-tokens/ST-
 
 ***
 
-![](/assets/img/home/17-ede5c959.jpg)
+![Map of the Guerrero Gap at the Mexican subduction zone with modelled coseismic slip](/assets/img/home/17-ede5c959.jpg)
 
 ### EOS Editor's highlight for Li & Gabriel, AGU Advances, 2024
 
@@ -197,7 +197,7 @@ Forecasting Earthquake Ruptures from Slow Slip Evolution: A new generation of ph
 
 ***
 
-![](/assets/img/home/18-6c5c79e7.jpg)
+![Simulated seismic wavefield spreading outward from a fracture network](/assets/img/home/18-6c5c79e7.jpg)
 
 ### EOS Editor's highlight for Palgunadi et al., JGR Solid Earth, 2024
 

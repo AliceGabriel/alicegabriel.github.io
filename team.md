@@ -6,15 +6,20 @@ body_class: page-team
 description: "Our group’s research bridges space-time scales as well as disciplines within Geophysics, Computer Science and Applied Mathematics."
 
 # Group photos shown at the top of the page (this replaces the Jimdo slide show).
+# "caption" is the line under the photo. "alt" describes the photo for people who cannot see it.
 photos:
   - src: "/assets/img/team/01-e25ad72e.jpg"
     caption: "Group meeting, SIO, April 2025"
+    alt: "Eight group members in a selfie outdoors, the Scripps pier and the ocean behind them"
   - src: "/assets/img/team/02-4d926a38.jpg"
     caption: "Group meeting, Munich, February 2025"
+    alt: "Group members around a long table in a restaurant"
   - src: "/assets/img/team/03-caf4d268.jpg"
     caption: "Group meeting, San Diego, February 2025"
+    alt: "Group members at a table in a sports bar"
   - src: "/assets/img/team/04-5ea2ac5e.jpg"
     caption: "ChEESE meeting with TUM collaborators, Iceland, September 2024"
+    alt: "Five people in rain jackets in front of a building"
 ---
 
 Our group’s research bridges space-time scales as well as disciplines within Geophysics, Computer Science and Applied Mathematics. We aim to harness the full breadth of Earth observations integrated with novel modeling approaches and study a range of geophysical problems with multi-physics character such as earthquake-tsunami interaction. Our team has members at Scripps Institution of Oceanography (SIO), University of California San Diego (UCSD) and at Ludwig-Maximillians-Universität München (LMU Munich), Germany.

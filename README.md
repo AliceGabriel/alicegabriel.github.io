@@ -31,7 +31,7 @@ To edit on github.com: open the file, press the pencil icon, change the text, pr
 In `index.md`, paste a new block directly under the `## News` line:
 
 ```markdown
-![](/assets/img/home/my-picture.jpg)
+![Short description of the picture](/assets/img/home/my-picture.jpg)
 
 ### Title of the news item
 
@@ -40,7 +40,7 @@ Text of the news item, with [a link](https://example.org).
 ***
 ```
 
-The line with three asterisks separates news items. Keep an empty line above and below it. A news item can go without a picture.
+The line with three asterisks separates news items. Keep an empty line above and below it. A news item can go without a picture. The words in the square brackets describe the picture for people who cannot see it. They do not appear on the page.
 
 ### Add a publication
 
@@ -74,13 +74,19 @@ A video line needs the YouTube id, the part after `v=` in the video address:
 {% include video.html id="JpwcWkPuc9A" title="A Scientist's Life: Alice Gabriel" %}
 ```
 
-The page shows a still picture. The video plays in place after a click, so nothing loads from YouTube's player before that.
+The page shows a still picture. The video plays in place after a click, so nothing loads from YouTube before that.
+
+The still picture is the file `assets/img/video/` plus the id plus `.jpg`, for example `assets/img/video/JpwcWkPuc9A.jpg`. For a new video, save one frame of it under that name (wide format, 16:9). Without that file the still comes from YouTube's picture server, which works but contacts YouTube when the page opens.
 
 The three videos at the top of the home page are listed in the settings block of `index.md` under `videos:`.
 
 ### Change the group photos on the Team page
 
 They are listed in the settings block of `team.md` under `photos:`, each with `src` (the picture file) and `caption`.
+
+### Quotation marks and dashes
+
+They appear on the site exactly as typed. A straight `"` stays straight, a curly `“` stays curly.
 
 ## If the site does not update after a change
 
@@ -93,12 +99,9 @@ The "Actions" tab of the repository shows the error message. Correcting the line
 
 ## Moving from Jimdo: the remaining steps
 
-Pictures that have not been copied yet are written as `IMPORT:name` in the page files and show as grey boxes.
-
-1. **Copy pictures and PDFs.** The import runs on github.com: "Actions" tab, "Import pictures and PDFs from Jimdo", "Run workflow". It downloads the files, fills the picture slots where it can do so with certainty, writes a comparison of the old and new text to `tools/jimdo-snapshot/text-check.txt`, and keeps what it printed in `tools/jimdo-snapshot/import-log.txt`.
-   - The paper PDFs were copied in October 2026 and are in `assets/papers/`.
-   - Jimdo's page server turns away requests from GitHub, so the import cannot read the Jimdo pages itself. It uses copies saved from a browser ("Save Page As", HTML only) in `tools/jimdo-snapshot/pages/`, named `home.html`, `team.html`, `publications.html`, `projects.html`, `about-me.html`, `in-the-media.html`, `codes-and-hpc-training.html` and `teaching.html`. The pictures themselves sit on a different Jimdo server that GitHub can reach.
-   - On a computer where the Jimdo site opens normally, `python3 tools/import_from_jimdo.py` in a copy of this repository does the same without saved pages.
+1. **Copy pictures and PDFs.** Done in October 2026. The paper PDFs are in `assets/papers/`, the CV in `assets/files/`, the pictures in `assets/img/`, the video stills in `assets/img/video/`.
+   - The eight Jimdo pages as saved from a browser on 10 October 2026 are in `tools/jimdo-snapshot/pages/`. They are the record of the old site. `tools/jimdo-snapshot/text-check.txt` lists the differences between their text and the new pages.
+   - To copy again after a change on the Jimdo site: save the changed page from a browser ("Save Page As") over the file of the same name in that folder, then run the import on github.com: "Actions" tab, "Import pictures and PDFs from Jimdo", "Run workflow". Jimdo's page server turns away requests from GitHub, which is why the import works from saved pages. What a run printed is kept in `tools/jimdo-snapshot/import-log.txt`.
 2. **Check the test address.** GitHub publishes the site at `https://alicegabriel.github.io/` once the repository is public and Pages is switched on (repository "Settings", "Pages", "Deploy from a branch", branch `main`, folder `/ (root)`). A private repository is published only on a paid GitHub plan.
 3. **Move the domain.** Transfer `alicegabriel.com` from Jimdo to another registrar. At the new registrar set these DNS records:
 

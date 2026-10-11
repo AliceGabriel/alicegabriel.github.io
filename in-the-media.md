@@ -35,7 +35,7 @@ grid_class: media
 
 ***
 
-![](/assets/img/in-the-media/01-dc9d2545.png)
+![Quote from the article: "We are challenged by these earthquakes happening so rarely," said Alice Gabriel, associate professor of seismology with the Scripps Institute of Geophysics and Planetary Physics. "It's just a very long timescale. Now, we have the Turkey events, which were very devastating but also have important lessons for us."](/assets/img/in-the-media/01-dc9d2545.png)
 
 “**Where will the next ‘big one’ be in California? Seismologists name faults of top concern**“ by Danielle Dawson – FOX5 San Diego <https://fox5sandiego.com/news/earthquakes/where-will-the-next-big-one-be-in-california-seismologists-name-faults-of-top-concern/>
 

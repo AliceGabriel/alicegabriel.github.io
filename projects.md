@@ -10,7 +10,7 @@ body_class: page-projects
 
 ## On-going
 
-![](/assets/img/projects/01-1057a31b.jpg)
+![QUAKEWORX: collage of slides and software screenshots](/assets/img/projects/01-1057a31b.jpg)
 
 ### QUAKEWORX
 
@@ -20,7 +20,7 @@ A science gateway for seismic simulations, funded by NSF (2023-28), PI.
 
 ***
 
-![](/assets/img/projects/02-f4e62320.jpg)
+![Aisle between rows of servers in a data centre](/assets/img/projects/02-f4e62320.jpg)
 
 ### LCCF: CSA
 
@@ -30,7 +30,7 @@ Leadership-Class Computing Facility at TACC: Characteristic Science Application,
 
 ***
 
-![](/assets/img/projects/03-993a031d.png)
+![Diagram of the megathrust modeling framework linking models and observations](/assets/img/projects/03-993a031d.png)
 
 ### MTMOD
 
@@ -40,7 +40,7 @@ Megathrust Modeling Framework: A collaborative effort to advance our understandi
 
 ***
 
-![](/assets/img/projects/04-32c4a611.png)
+![CRESCENT logo](/assets/img/projects/04-32c4a611.png)
 
 ### CRESCENT
 
@@ -50,7 +50,7 @@ Cascadia Region Earthquake Science Center, funded by NSF (2023-28), Senior Perso
 
 ***
 
-![](/assets/img/projects/05-ed30611b.png)
+![SCEC logo](/assets/img/projects/05-ed30611b.png)
 
 ### SCEC
 
@@ -60,7 +60,7 @@ Statewide California Earthquake Center, funded by NSF, USGS, NASA, PG&E, ExCom M
 
 ***
 
-![](/assets/img/projects/06-86e69b37.png)
+![SZ4D logo](/assets/img/projects/06-86e69b37.png)
 
 ### SZ4D
 
@@ -70,7 +70,7 @@ A community-driven initiative for a long-term, interdisciplinary research progra
 
 ***
 
-![](/assets/img/projects/07-ec51a9db.png)
+![TREAD logo](/assets/img/projects/07-ec51a9db.png)
 
 ### TREAD
 
@@ -80,7 +80,7 @@ Data and processes in seismic hazard, funded as Marie Sklodowska-Curie Innovativ
 
 ***
 
-![](/assets/img/projects/08-14549c81.png)
+![DFG logo: Deutsche Forschungsgemeinschaft](/assets/img/projects/08-14549c81.png)
 
 ### DEFORM
 
@@ -90,7 +90,7 @@ Priority Programme (SPP) “Plate Deformation and Geohazards: The Eastern Margin
 
 ***
 
-![](/assets/img/projects/09-05be68b5.jpg)
+![Geo-INQUIRE logo](/assets/img/projects/09-05be68b5.jpg)
 
 ### Geo-INQUIRE
 
@@ -100,7 +100,7 @@ Geosphere INfrastructures for QUestions into Integrated REsearch funded by the E
 
 ***
 
-![](/assets/img/projects/10-2d9d4f34.png)
+![ChEESE logo symbol](/assets/img/projects/10-2d9d4f34.png)
 
 ### ChEESE-2P
 
@@ -110,7 +110,7 @@ Centre of Excellence for Exascale in Solid Earth, Phase 2, funded by the Europea
 
 ***
 
-![](/assets/img/projects/11-638a208a.png)
+![DT-GEO logo](/assets/img/projects/11-638a208a.png)
 
 ### DT-Geo
 
@@ -120,7 +120,7 @@ A Digital Twin for GEOphysical extremes, funded by the European Union (2022-25),
 
 ***
 
-![](/assets/img/projects/12-804acf82.png)
+![KONWIHR logo](/assets/img/projects/12-804acf82.png)
 
 ### Konwihr
 
@@ -130,7 +130,7 @@ GPU Performance and Feature Enhancement of the Earthquake Cycle Simulation Softw
 
 ***
 
-![](/assets/img/projects/13-f937e1e0.png)
+![SPIN logo: Monitoring a restless Earth](/assets/img/projects/13-f937e1e0.png)
 
 ### SPIN
 
@@ -140,7 +140,7 @@ Seismological Parameters and INstrumentation, funded as Marie Sklodowska-Curie I
 
 ## Past
 
-![](/assets/img/projects/14-caf041ef.png)
+![Sketch of a fault with a rupture front and circular arrows](/assets/img/projects/14-caf041ef.png)
 
 ### TEAR
 
@@ -150,7 +150,7 @@ Truly Extended Earthquake Rupture, funded as ERC Starting Grant by the European 
 
 ***
 
-![](/assets/img/projects/15-aad825d6.jpg)
+![ExaHyPE logo: An Exascale Hyperbolic PDE Engine](/assets/img/projects/15-aad825d6.jpg)
 
 ### ExaHyPE
 
@@ -160,7 +160,7 @@ An Exascale Hyperbolic PDE Engine, funded by the European Union (2015-19), PI.
 
 ***
 
-![](/assets/img/projects/16-805a3a6d.png)
+![ChEESE logo](/assets/img/projects/16-805a3a6d.png)
 
 ### ChEESE
 
@@ -170,7 +170,7 @@ Centre of Excellence for Exascale in Solid Earth, funded by the European Union (
 
 ***
 
-![](/assets/img/projects/17-84e5ce58.jpg)
+![Simulated tsunami wave field in the Indian Ocean around Sumatra](/assets/img/projects/17-84e5ce58.jpg)
 
 ### ASCETE
 

@@ -377,6 +377,8 @@ img.pending { background: var(--tint); }
 .news-item:not(:has(img, .video)) { grid-template-columns: minmax(0, 1fr); }
 .news-item:not(:has(img, .video)) > * { grid-column: 1; }
 .news-item img { display: block; width: 100%; }
+/* A news picture is shown whole and fits a square box, so tall pictures do not tower over the text. */
+.news-item > p:has(> img:only-child) img { width: auto; height: auto; max-width: 100%; max-height: 17rem; }
 
 /* ---------- Inner pages ---------- */
 .page-wrap { padding-block: 3rem 4.5rem; }
@@ -407,6 +409,16 @@ img.pending { background: var(--tint); }
   }
   .page-wrap .prose > p:has(> img:only-child) img { display: block; width: 100%; }
 }
+/* On narrower screens they sit in the text and stay a moderate size. */
+@media (max-width: 65.999rem) {
+  .page-wrap .prose > p:has(> img:only-child) img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 22rem);
+    max-height: 26rem;
+  }
+}
 
 /* Photo grid at the top of a page (set with "photos" in the page settings). */
 .gallery {
@@ -424,8 +436,10 @@ img.pending { background: var(--tint); }
 .page-publications .prose > p:has(> img:only-child) {
   float: none;
   width: auto;
-  margin: 0 0 2rem;
+  max-width: 26rem;
+  margin: 0 0 1.5rem;
 }
+.page-publications .prose > p:has(> img:only-child) img { display: block; width: 100%; max-width: 100%; max-height: none; }
 .page-publications .prose img.pending { max-width: 20rem; }
 .page-publications .prose ul {
   list-style: none;
@@ -464,13 +478,13 @@ img.pending { background: var(--tint); }
 .entry > p:has(> img:only-child) {
   display: flex;
   align-items: center;
-  height: 5.5rem;
+  height: 6.5rem;
   margin: 0 0 1rem;
 }
 .entry > p:has(> img:only-child) img {
   width: auto;
   height: auto;
-  max-width: 11rem;
+  max-width: 14rem;
   max-height: 100%;
   object-fit: contain;
 }
