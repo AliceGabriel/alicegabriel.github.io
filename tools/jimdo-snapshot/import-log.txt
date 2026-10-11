@@ -1,0 +1,27 @@
+Import from https://www.alicegabriel.com, 2026-10-11 05:08 UTC, Python 3.12.3, on GitHub
+1. Saving a copy of each Jimdo page
+    refused [python] https://www.alicegabriel.com/
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b588d19eedcee-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+    refused [python, browser name] https://www.alicegabriel.com/
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b588d99764ea0-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+    refused [curl] https://www.alicegabriel.com/
+            HTTP 403 (Server: cloudflare; cf-ray: a48b588e6b251ed6-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+    refused [curl, browser name] https://www.alicegabriel.com/
+            HTTP 403 (Server: cloudflare; cf-ray: a48b588fcd848ad4-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/: HTTP 403 (Server: cloudflare; cf-ray: a48b588fcd848ad4-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+    refused [python] https://www.alicegabriel.com/team/
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b58903d092b6e-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+    refused [python, browser name] https://www.alicegabriel.com/team/
+            HTTP 403 (Server: cloudflare; cf-mitigated: challenge; cf-ray: a48b5890e8db75b7-LAX; page says: Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-syste)
+    refused [curl] https://www.alicegabriel.com/team/
+            HTTP 403 (Server: cloudflare; cf-ray: a48b58918d89ccff-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+    refused [curl, browser name] https://www.alicegabriel.com/team/
+            HTTP 403 (Server: cloudflare; cf-ray: a48b58922bbef7dd-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/team/: HTTP 403 (Server: cloudflare; cf-ray: a48b58922bbef7dd-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/publications/: HTTP 403 (Server: cloudflare; cf-ray: a48b5893efd3a652-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/projects/: HTTP 403 (Server: cloudflare; cf-ray: a48b589619ad2ae8-LAX; page says: Attention Required! | Cloudflare body{margin:0;padding:0} if (!navigator.cookieEnabled) { window.addEventListener('DOMContentLoaded', function () { var cookieEl)
+  could not read https://www.alicegabriel.com/about-me/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
+  could not read https://www.alicegabriel.com/in-the-media/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
+  could not read https://www.alicegabriel.com/codes-and-hpc-training/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
+  could not read https://www.alicegabriel.com/teaching/: HTTP 0 (www.alicegabriel.com turned away 4 requests in a row in every request style; not asking again)
+No page could be read. Is the Jimdo site still online and is this computer online?
