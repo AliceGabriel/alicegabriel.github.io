@@ -18,6 +18,17 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+  # Quotation marks, apostrophes, dashes and dots appear exactly as typed.
+  # Without these lines the site would turn " into curly quotes by guessing their direction.
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  typographic_symbols:
+    ndash: "--"
+    mdash: "---"
+    hellip: "..."
+    laquo: "<<"
+    raquo: ">>"
+    laquo_space: "<< "
+    raquo_space: " >>"
 
 permalink: pretty
 

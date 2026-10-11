@@ -122,5 +122,3 @@ Our group’s research bridges space-time scales as well as disciplines within G
 - **Jeena Yun**, 2024 AGU Outstanding Student Presentation Award
 - **Zihua Niu**, 2023 AGU Outstanding Student Presentation Award
 - **Nico Schliwa**, 2021 SSA Student Presentation Award,
-
-[https://www.seismosoc.org/news/ssa-global-spudich-travel-grant-recipients-announced/](https://www.seismosoc.org/news/ssa-global-spudich-travel-grant-recipients-announced/)
