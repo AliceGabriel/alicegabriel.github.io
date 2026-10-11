@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{%- comment -%}
+  Turns a Markdown page into a grid of entries.
+  Entries are separated by a line containing only three asterisks.
+  A second-level heading (## Heading) starts a new group of entries.
+{%- endcomment -%}
+{%- capture body -%}{% include fix-urls.html html=content %}{%- endcapture -%}
+{%- assign chunks = body | split: '<hr />' -%}
+{%- assign grid_open = false -%}
+<div class="wrap page-wrap">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {%- for chunk in chunks -%}
+    {%- assign piece = chunk -%}
+    {%- assign heading = '' -%}
+    {%- if piece contains '<h2' and piece contains '</h2>' -%}
+      {%- comment %} An entry may sit before the heading inside the same chunk. {% endcomment -%}
+      {%- assign before = piece | split: '<h2' | first -%}
+      {%- assign rest = piece | remove_first: before -%}
+      {%- assign heading = rest | split: '</h2>' | first | append: '</h2>' -%}
+      {%- assign piece = rest | remove_first: heading -%}
+      {%- assign before_text = before | strip_html | strip -%}
+      {%- if before_text != '' or before contains '<img' or before contains 'class="video' -%}
+        {%- unless grid_open %}
+  <div class="entry-grid {{ page.grid_class }}">
+          {%- assign grid_open = true -%}
+        {%- endunless %}
+    <article class="entry">{{ before }}</article>
+      {%- endif -%}
+      {%- if grid_open %}
+  </div>
+        {%- assign grid_open = false -%}
+      {%- endif %}
+  <div class="group-heading">{{ heading }}</div>
+    {%- endif -%}
+    {%- assign piece_text = piece | strip_html | strip -%}
+    {%- if piece_text != '' or piece contains '<img' or piece contains 'class="video' -%}
+      {%- unless grid_open %}
+  <div class="entry-grid {{ page.grid_class }}">
+        {%- assign grid_open = true -%}
+      {%- endunless %}
+    <article class="entry">{{ piece }}</article>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if grid_open %}
+  </div>
+  {%- endif %}
+</div>

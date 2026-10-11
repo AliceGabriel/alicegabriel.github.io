@@ -1,0 +1,17 @@
+# The menu at the top of every page, in display order.
+- title: Home
+  url: /
+- title: Team
+  url: /team/
+- title: Publications
+  url: /publications/
+- title: Projects
+  url: /projects/
+- title: About Me
+  url: /about-me/
+- title: In the media
+  url: /in-the-media/
+- title: Codes and HPC Training
+  url: /codes-and-hpc-training/
+- title: Teaching
+  url: /teaching/

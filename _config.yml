@@ -1,0 +1,32 @@
+# Settings for www.alicegabriel.com
+# GitHub Pages reads this file each time the site is rebuilt.
+
+title: Alice-Agnes Gabriel
+description: >-
+  Alice-Agnes Gabriel is an Associate Professor of Geophysics at Scripps
+  Institution of Oceanography, UC San Diego.
+url: "https://www.alicegabriel.com"
+lang: en
+
+# Do not add a "baseurl" line. GitHub Pages sets it on its own, which keeps both
+# the test address (username.github.io/repository) and the final domain working.
+
+# Optional: paste a Google Search Console verification code between the quotes.
+google_site_verification: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: pretty
+
+# Files that belong to the repository but not to the website.
+exclude:
+  - README.md
+  - LICENSE
+  - tools
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

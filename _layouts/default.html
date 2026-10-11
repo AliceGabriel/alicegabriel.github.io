@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- if page.url == '/' -%}
+  {%- assign full_title = site.title -%}
+{%- else -%}
+  {%- assign full_title = page.title | append: ' | ' | append: site.title -%}
+{%- endif -%}
+{%- assign desc = page.description | default: site.description | strip_newlines | strip %}
+<title>{{ full_title | escape }}</title>
+<meta name="description" content="{{ desc | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ full_title | escape }}">
+<meta property="og:description" content="{{ desc | escape }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{%- if page.image %}
+<meta property="og:image" content="{{ site.url }}{{ page.image }}">
+{%- endif %}
+<meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="format-detection" content="telephone=no">
+{%- if site.google_site_verification and site.google_site_verification != '' %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body class="{{ page.body_class | default: 'page-plain' }}">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        {%- for item in site.data.nav %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer-inner">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    <p>Scripps Institution of Oceanography, UC San Diego</p>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{%- capture body -%}{% include fix-urls.html html=content %}{%- endcapture -%}
+<div class="wrap page-wrap">
+  {%- unless page.hide_title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  {%- endunless %}
+
+  {%- if page.photos %}
+  <div class="gallery">
+    {%- for photo in page.photos %}
+    <figure>
+      {% include picture.html src=photo.src alt=photo.caption %}
+      {%- if photo.caption %}
+      <figcaption>{{ photo.caption }}</figcaption>
+      {%- endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  <div class="prose">
+{{ body }}
+  </div>
+</div>

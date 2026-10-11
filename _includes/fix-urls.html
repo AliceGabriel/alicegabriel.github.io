@@ -1,0 +1,11 @@
+{%- comment -%}
+  Prepares page content written in Markdown:
+  1. A picture that has not been copied over from Jimdo yet (written as IMPORT:name)
+     is shown as a neutral placeholder box.
+  2. Links and pictures that start with "/" get the site's address prefix, so the
+     pages also work at the GitHub test address (username.github.io/repository).
+{%- endcomment -%}
+{%- assign base = site.baseurl | default: '' -%}
+{%- capture src_root -%}src="{{ base }}/{%- endcapture -%}
+{%- capture href_root -%}href="{{ base }}/{%- endcapture -%}
+{{- include.html | replace: 'src="IMPORT:', 'class="pending" src="/assets/img/placeholder.svg" data-slot="' | replace: 'src="/', src_root | replace: 'href="/', href_root -}}

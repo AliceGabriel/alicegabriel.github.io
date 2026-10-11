@@ -1,0 +1,11 @@
+{%- comment -%}
+  A picture named in a page's settings block. Shows a placeholder box while the
+  file has not been copied over from Jimdo yet (src written as IMPORT:name).
+{%- endcomment -%}
+{%- assign pic = include.src | default: '' -%}
+{%- assign pic_head = pic | slice: 0, 7 -%}
+{%- if pic == '' or pic_head == 'IMPORT:' -%}
+<img class="pending" src="{{ '/assets/img/placeholder.svg' | relative_url }}" data-slot="{{ pic | remove_first: 'IMPORT:' }}" alt="">
+{%- else -%}
+<img src="{{ pic | relative_url }}" alt="{{ include.alt | default: '' | escape }}" loading="lazy">
+{%- endif -%}

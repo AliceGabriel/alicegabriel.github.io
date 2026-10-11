@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{%- comment -%}
+  Home page. The name, positions and videos come from the settings block at the
+  top of index.md. The text of index.md is split at the line "<!-- news -->":
+  what comes before is the introduction, what comes after is the news list,
+  with news items separated by a line containing only three asterisks.
+{%- endcomment -%}
+{%- capture body -%}{% include fix-urls.html html=content %}{%- endcapture -%}
+{%- assign parts = body | split: '<!-- news -->' -%}
+
+<section class="hero">
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <h1 class="hero-name">{{ site.title }}</h1>
+    {%- for position in page.positions %}
+    <p class="hero-position">
+      <span class="hero-role">{{ position.role }}</span>
+      <a href="{{ position.url }}">{{ position.place }}</a>
+    </p>
+    {%- endfor %}
+    {%- if page.profiles %}
+    <ul class="hero-profiles">
+      {%- for profile in page.profiles %}
+      <li><a href="{{ profile.url }}">{{ profile.label }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if page.videos %}
+<section class="video-row" aria-label="Videos">
+  <div class="wrap video-row-inner">
+    {%- for video in page.videos %}
+    <figure>
+      {% include video.html id=video.id title=video.title %}
+      {%- if video.caption %}
+      <figcaption>{{ video.caption }}</figcaption>
+      {%- endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="intro">
+  <div class="wrap intro-inner">
+{{ parts[0] }}
+  </div>
+</section>
+
+{%- if parts.size > 1 -%}
+  {%- assign news_html = parts[1] -%}
+  {%- assign news_heading = '' -%}
+  {%- if news_html contains '</h2>' -%}
+    {%- assign heading_bits = news_html | split: '</h2>' -%}
+    {%- assign news_heading = heading_bits[0] | append: '</h2>' -%}
+    {%- assign news_html = news_html | remove_first: news_heading -%}
+  {%- endif -%}
+  {%- assign items = news_html | split: '<hr />' %}
+<section class="news">
+  <div class="wrap">
+    {{ news_heading }}
+    {%- for item in items -%}
+      {%- assign item_text = item | strip_html | strip -%}
+      {%- if item_text != '' or item contains '<img' or item contains 'class="video' %}
+    <article class="news-item">{{ item }}</article>
+      {%- endif -%}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
