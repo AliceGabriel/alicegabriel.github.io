@@ -31,6 +31,13 @@ jobs:
       - name: The migration tools are not published
         run: test ! -e _site/tools && test ! -e _site/README.md
 
+      - name: Report how addresses were written
+        run: |
+          echo "::notice title=stylesheet::$(grep -o '<link rel="stylesheet"[^>]*>' _site/index.html | head -1)"
+          echo "::notice title=first video still::$(grep -o '<img src="[^"]*"[^>]*width="[0-9]*" height="[0-9]*"' _site/index.html | head -1)"
+          echo "::notice title=canonical::$(grep -o '<link rel="canonical"[^>]*>' _site/team/index.html | head -1)"
+          echo "::notice title=static files seen::$(ls _site/assets/img/video | tr '\n' ' ')"
+
       - name: Video stills come from this site, not from YouTube
         run: |
           grep -q 'src="/assets/img/video/JvMuQN4FuvU.jpg"' _site/index.html
